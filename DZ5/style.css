@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(0, 0, 255);
+    background-color: rgb(124, 124, 233);
+    padding: 20px;
+}
