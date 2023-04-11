@@ -11,15 +11,21 @@
     background-color: rgb(124, 124, 233);
     padding: 20px;
 }
+
+.fon{
+    background: url(img/fon.gif)repeat-y -40px;
+}
 .menu{
     font-size: 14px;
-    background-color: yellow;
-    width: 15%;
+    width: 140px;
     float: left;
 }
+
+
 .content{
-    margin-left: 15%;
-    float: left;
+    margin-left: 145px;
+    margin-right: 10px;
+    background: url(img/ball.gif) repeat-y top right;
 }
 .footer{
     text-align: center;
@@ -28,5 +34,4 @@
     color: rgb(0, 0, 255);
     background-color: rgb(124, 124, 233);
     padding: 20px;
-    clear: both;
 }
