@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+div.first{
+    margin-bottom:20px;
+}
+div.first a{
+     font-size: 13px;
+     border-right: solid red 2px;
+     padding: 5px;
+}
+a:hover{
+    color: red;
+}
+div.second{
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+div.second a::after{
+    content: '|'; font-size: 24px; color: red; font-weight: bolder; padding: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="first">
+        <a href="https://www.google.com/">Первая ссылка</a>
+        <a href="https://www.google.com/">Вторая ссылка</a>
+        <a href="https://www.google.com/">Третья ссылка</a>
+        <a href="https://www.google.com/">Четвертая ссылка</a>
+        <a href="https://www.google.com/">Пятая ссылка</a>
+        <a href="https://www.google.com/">Шестая ссылка</a>
+    </div>
+
+    <div class="second">
+        <a href="https://www.google.com/">Первая ссылка</a>
+        <a href="https://www.google.com/">Вторая ссылка</a>
+        <a href="https://www.google.com/">Третья ссылка</a>
+        <a href="https://www.google.com/">Четвертая ссылка</a>
+        <a href="https://www.google.com/">Пятая ссылка</a>
+        <a href="https://www.google.com/">Шестая ссылка</a>
+    </div>
+</body>
+</html>
