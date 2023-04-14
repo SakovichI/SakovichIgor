@@ -13,7 +13,7 @@
 }
 
 .fon{
-    background: url(img/fon.gif)repeat-y -40px,
+    background: url(img/fon1.gif)repeat-y -62px top,
                 url(img/ball.gif)repeat-y top right; 
 }
 .menu{
