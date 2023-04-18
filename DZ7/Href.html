@@ -20,10 +20,9 @@
           padding-right: 4px;
         }   
         @media print {
-          p a[href=https://] {content: fkfgk;}
-
+           a[href^=https]::after {content:"["attr(href)"]";}
           }
-        }
+        
             
             
         
