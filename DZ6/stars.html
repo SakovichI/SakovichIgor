@@ -6,12 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stars</title>
     <style>
-        div{
+        .pos{
+            height: 100px;
+            position: absolute;
+        }
+        div.pos > div{
             background: url(img/stars.png) no-repeat -398px 2px;
             display: inline;
             width: 101px;
             height: 99px;
             float: right;
+
+
             }
         div.starsw1:hover{
             background: url(img/stars.png) no-repeat;
@@ -39,6 +45,7 @@
             background: url(img/stars.png);
             width: 101px;
             height: 99px;
+
         }
         div.starsw4:hover ~  div{
             background: url(img/stars.png);
@@ -61,19 +68,19 @@
             width: 101px;
             height: 99px;
         }
-        div.starsw5{
-            margin-right: 200px;
-        }
+
 
 
     </style>
 </head>
 <body>
+    <div class="pos">
     <div class="starsw5"></div>
     <div class="starsw4"></div>
     <div class="starsw3"></div>
     <div class="starsw2"></div>
     <div class="starsw1"></div>
+    </div>
 
     
 </body>
