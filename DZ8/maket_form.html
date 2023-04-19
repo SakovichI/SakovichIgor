@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form_css.css">
+    <link rel="stylesheet" href="css/form_media.css">
+    <title>maket_form</title>
+</head>
+<body>
+    
+    <form action="FindAnimal.php" method="post">
+        
+        <fieldset>
+            <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
+            <label> 
+                <label>Название статьи:</label><input type="text" name="article" id="article">
+            </label><br>
+            <label>
+                Рубрика: <select name="rubric" id="rubric">
+                    <option value="1">программирование</option>
+                    <option value="2">компьютерная техника</option>
+                    <option value="3">Дизайн и графика</option>
+                </select>
+            </label><br>
+            
+            <label><span>Публикация:</span>
+                        <lable class="public">
+                    <span><input type="radio" name="public" value="journal">Журнал</span>
+                    <span><input type="radio" name="public" value="article">сайт</span>
+                    <span><input type="radio" name="public" value="journal and article">Журнал и сайт</span>
+                        </label>
+            <label><br>
+                Разрежить коментарий <input type="checkbox" name="comment" value="com">
+            </label><br>
+           <label> Текст статьи:<br>
+            <textarea name="text"></textarea>
+           </label><br>
+           <input type="submit" value="Опубликовать"><br>
+        </fieldset>
+
+    </form>
+</body>
+</html>

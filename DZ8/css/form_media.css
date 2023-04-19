@@ -1,0 +1,25 @@
+@media all and (max-width: 630px){
+
+#article{
+        position: unset;
+        width: 90%;
+}
+select{
+        position: unset;
+        margin-right: 65%;
+}
+
+textarea{
+        width: 80%;
+        height: 50px;
+}
+[type=submit]{
+        width: 100px;
+}
+span{
+        display: block;
+}
+.public{
+        position: unset;
+}
+}
