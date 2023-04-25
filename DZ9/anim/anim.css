@@ -19,8 +19,6 @@
 .anim{
     width: 100px;
     height: 130px;
-    animation: Animation 3s steps(8) infinite,
-    Animation2 3s steps(8) infinite,
-    Animation3 3s steps(6) infinite
-    ;
+    animation: Animation 1s steps(8) infinite;
+
 }
