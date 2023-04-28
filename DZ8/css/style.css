@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    padding-left: 20px;
+}
+h2{
+    text-align: center;
+}
+img{
+    float:left; padding-right: 20px;
+}
+.head{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(0, 0, 255);
+    background-color: rgb(124, 124, 233);
+    padding: 20px;
+}
+.fon{
+    
+    display: flex;
+    flex-direction: row;   
+}
+.menu{
+    font-size: 14px;
+    background-color: rgba(228, 133, 66, 0.671);
+
+
+
+}
+.content{
+    background: url(../../DZ5/img/ball.gif) repeat-y top right; 
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.footer{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bolder;
+    color: rgb(0, 0, 255);
+    background-color: rgb(124, 124, 233);
+    padding: 20px;
+}
+.fix{
+    width: 80px;
+    height: 50px;
+    background-color: aqua;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+}

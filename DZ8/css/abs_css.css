@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.text{
+    text-align: justify;
+}
+
+.pos{
+    width: 400px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+[alt=biohazard]{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+[alt=Man-and-woman]{
+    position: absolute;
+    left: 200px;
+    top: 0px;
+}
+[alt=No_smoking]{
+    position: absolute;
+    left: 70px;
+    top: 0px;
+    z-index: 2;
+}
+[alt=Yin_and_Yang]{
+    position: absolute;
+    left: 100px;
+    top: 160px;
+}
+[alt=biohazard]:hover{
+    z-index: 3;
+}
+[alt=Man-and-woman]:hover{
+    z-index: 3;
+}
+[alt=Yin_and_Yang]:hover{
+    z-index: 3;
+}
