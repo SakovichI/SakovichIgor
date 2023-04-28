@@ -1,0 +1,77 @@
+.clearfix:after {
+     content: ""; display: block; clear: both 
+}
+.header{
+    background-color: #313131;
+}
+.container{
+    width: 1140px;
+    margin: 0px auto;
+}
+.container ul{
+    float: left;
+    list-style: none;
+}
+.container li{
+    padding: 10px 30px 12px 0px;
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.menu_right{
+    float: right;
+    margin-top: 10px;
+}
+.menu_right a{
+    padding: 0px 30px 12px 0px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.menu_right span{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.menu_right a::before{
+    content: url(../img/phone.svg);
+    vertical-align: middle;
+    padding-right: 10px;
+    
+}
+.menu_right span::before{
+    content: url(../img/delivery-icon.svg);
+    vertical-align: middle;
+    padding-right: 10px;
+}
+.search_menu{
+    height: 50px;
+}
+.logo{
+    float: left;
+    padding: 70px 38px 33px 0px;
+
+}
+.search{
+    margin: 20px 250px 0px 124px;
+    border: solid 1px #000;
+    height: 50px;
+}
+.search_item{
+    float: right;
+    padding: 0px 0px 36px 37px;
+}
+.search_item svg{
+    padding: 0px 35px 0px 0px;
+}
