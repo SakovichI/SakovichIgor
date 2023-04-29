@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box ;
+}
 .clearfix:after {
      content: ""; display: block; clear: both 
 }
@@ -8,11 +11,11 @@
     width: 1140px;
     margin: 0px auto;
 }
-.container ul{
+.container .head{
     float: left;
     list-style: none;
 }
-.container li{
+.head li{
     padding: 10px 30px 12px 0px;
     display: inline-block;
     font-family: 'Roboto';
@@ -45,33 +48,96 @@
     color: #FFFFFF;
 }
 .menu_right a::before{
-    content: url(../img/phone.svg);
+    content: url(../img/svg/phone.svg);
     vertical-align: middle;
     padding-right: 10px;
     
 }
 .menu_right span::before{
-    content: url(../img/delivery-icon.svg);
+    content: url(../img/svg/delivery-icon.svg);
     vertical-align: middle;
     padding-right: 10px;
 }
-.search_menu{
-    height: 50px;
-}
+
 .logo{
     float: left;
-    padding: 70px 38px 33px 0px;
-
+    padding-top: 12.5px;
 }
 .search{
-    margin: 20px 250px 0px 124px;
-    border: solid 1px #000;
+    position: relative;
+    margin: 20px 150px 0px 150px;
+}
+.search input{
+    width: 100%;
     height: 50px;
+}
+.search input[placeholder]{
+    padding: 17px 0px 17px 49px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #414141;
+}
+.search button{
+    padding: 18px 20px 18px 15px;
+    background: none;
+    border: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
 }
 .search_item{
     float: right;
-    padding: 0px 0px 36px 37px;
+    padding-top: 12.5px;
 }
 .search_item svg{
-    padding: 0px 35px 0px 0px;
+    padding: 0px 30px 0px 0px;
+}
+.search_item svg:last-child{
+    padding: 0px 0px 0px 0px;
+}
+
+.menu_nav{
+    height: 70px;
+    margin-top: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+}
+.menu_nav li{
+    height: 70px;
+    float: left;
+}
+.menu_nav li{
+    padding: 25px 25px 26px 73px;
+    display: inline-block;
+    position: relative;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #414141;
+}
+.menu_nav li:nth-child(1)::before{
+    content: url(../img/svg/kitchen-icon.svg);
+    position: absolute;
+    top: 23px;
+    left: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.menu_nav_level2{
+    display: none;
 }
