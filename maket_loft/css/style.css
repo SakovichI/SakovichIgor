@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box ;
-}
+
 .clearfix:after {
      content: ""; display: block; clear: both 
 }
@@ -12,12 +10,12 @@
     margin: 0px auto;
 }
 .container .head{
-    float: left;
     list-style: none;
 }
-.head li{
+.head a{
     padding: 10px 30px 12px 0px;
-    display: inline-block;
+    float: left;
+    text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -105,13 +103,15 @@
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
 }
 .menu_nav li{
-    height: 70px;
-    float: left;
+float: left;
+position: relative;
+height: 70px;
 }
-.menu_nav li{
-    padding: 25px 25px 26px 73px;
+
+
+.menu_nav > li span{
+    padding: 25px 10px 20px 40px;
     display: inline-block;
-    position: relative;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -119,25 +119,50 @@
     line-height: 19px;
     color: #414141;
 }
-.menu_nav li:nth-child(1)::before{
-    content: url(../img/svg/kitchen-icon.svg);
-    position: absolute;
-    top: 23px;
-    left: 40px;
+.menu_nav > li svg:not(:last-child){
+    position: relative;
+    top: 5px;
+    left: 34px;
 }
 
+.menu_nav > li:hover {
+    background-color: #245462;
+}
 
+.menu_nav > li:hover .menu_nav_level2{
+    display: block;
+    transition: 3s;
+}
 
-
-
-
-
-
-
-
-
-
-
-.menu_nav_level2{
+.menu_nav li .menu_nav_level2 {
+    list-style: none;
     display: none;
+    position: absolute;
+    top: 68px;
+    left: 0px;
+    width: 190px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+}
+.menu_nav li .menu_nav_level2 a{
+    display: block;
+    text-decoration: none;
+    padding: 25px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #414141;
+}
+.menu_nav li:hover span {
+    color: #FFFFFF;
+}
+.menu_nav li:hover svg path {
+    fill: #FFFFFF;
+}
+.menu_nav > li:nth-child(7) span {
+    color: #D74444;
+}
+.menu_nav > li svg:last-child {
+    padding: 28px 0px 28px 37px;
 }
