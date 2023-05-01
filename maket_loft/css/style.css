@@ -1,15 +1,23 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
 .clearfix:after {
      content: ""; display: block; clear: both 
 }
 .header{
     background-color: #313131;
 }
-.container{
-    width: 1140px;
+.contain{
+    max-width: 1140px;
     margin: 0px auto;
+    padding: 0px;
 }
-.container .head{
+.contain .head{
     list-style: none;
 }
 .head a{
@@ -79,19 +87,20 @@
     color: #414141;
 }
 .search button{
-    padding: 18px 20px 18px 15px;
+    padding: 14px 20px 12px 15px;
     background: none;
     border: none;
     position: absolute;
     left: 0px;
     top: 0px;
+    cursor: default;
 }
 .search_item{
     float: right;
     padding-top: 12.5px;
 }
 .search_item svg{
-    padding: 0px 30px 0px 0px;
+    margin: 0px 0px 0px 29px;
 }
 .search_item svg:last-child{
     padding: 0px 0px 0px 0px;
@@ -102,15 +111,16 @@
     margin-top: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
 }
-.menu_nav li{
+.menu_nav > li{
 float: left;
 position: relative;
 height: 70px;
+padding: 0px 10px 0px 35px;
 }
 
 
 .menu_nav > li span{
-    padding: 25px 10px 20px 40px;
+    padding: 25px 0px 20px 0px;
     display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
@@ -121,17 +131,16 @@ height: 70px;
 }
 .menu_nav > li svg:not(:last-child){
     position: relative;
-    top: 5px;
-    left: 34px;
+    top: 0px;
+    left: -5px;
 }
 
-.menu_nav > li:hover {
+.menu_nav > li:not(:nth-child(7), :nth-child(8)):hover {
     background-color: #245462;
 }
 
 .menu_nav > li:hover .menu_nav_level2{
     display: block;
-    transition: 3s;
 }
 
 .menu_nav li .menu_nav_level2 {
@@ -154,6 +163,9 @@ height: 70px;
     line-height: 16px;
     color: #414141;
 }
+.menu_nav_level2 > li:hover a{
+    color: #245462;
+}
 .menu_nav li:hover span {
     color: #FFFFFF;
 }
@@ -164,5 +176,81 @@ height: 70px;
     color: #D74444;
 }
 .menu_nav > li svg:last-child {
-    padding: 28px 0px 28px 37px;
+    margin: 28px 0px 28px 0px;
+}
+.carousel-indicators a{
+    padding: 14px 25px 14px 25px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140.8%;
+    letter-spacing: 0.04em;
+    color: #414141;
+}
+.carousel-control-next,
+.carousel-control-prev{
+    width: 6.5%;
+}
+.carousel-control-prev-icon{
+    background: rgba(157, 157, 157, 0.28);
+    width: 33px;
+    height: 33px;
+}
+.carousel-control-prev-icon svg,
+.carousel-control-next-icon svg{
+    margin: 11px 13px 11px 13px;
+}
+.carousel-control-next-icon{
+    background: #FFFFFF;
+    width: 33px;
+    height: 33px;
+}
+.carousel-control-next-icon path{
+    transform: rotate(180deg);
+    transform-origin: center;
+    stroke: rgba(0, 0, 0, 0.5);
+}
+.carousel-caption{
+    text-align: start;
+    z-index: 1;
+    position: absolute;
+    left: 120px;
+    top: 70px;
+}
+.carousel-caption h5{
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 105.3%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #3C3C3C;
+}
+.carousel-caption p{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140.8%;
+    letter-spacing: 0.02em;
+    color: #343434;
+}
+.carousel-caption a{
+    background-color: #FFFFFF;
+    padding: 14px 25px 14px 25px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 140.8%;
+    letter-spacing: 0.04em;
+    color: #414141;
 }
