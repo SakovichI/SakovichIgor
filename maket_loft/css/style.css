@@ -65,6 +65,65 @@ ul{
     padding-right: 10px;
 }
 
+
+.hamburger_menu{
+    display: none;
+    float: left;
+}
+.offcanvas-start{
+    width: max-content;
+}
+.offcanvas{
+    background: #F9F9F9;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+}
+.hamburger_menu div.offcanvas-header{
+    padding: 21px 15px 0px 26px;
+}
+.hamburger_menu h5.offcanvas-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #414141;
+}
+.hamburger_menu .button_close{
+    width: 18px;
+    height: 18px;
+    background: url(../img/png/Vector.png) no-repeat center,
+    #F0F0F0;
+    border: none;
+    border-radius: 100px;
+}
+.offcanvas-body{
+    padding: 0px;
+}
+.offcanvas-body h5{
+    margin: 19px 0px 19px 26px;
+}
+.offcanvas-body .main li,
+.offcanvas-body .navigation li{
+    display: block;
+    padding: 10px 62px 20px;
+}
+.offcanvas-body .main a,
+.offcanvas-body .navigation a{
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #414141;
+}
+.offcanvas-body li:hover{
+    background: linear-gradient(90deg, #F1F1F1 0%, 
+                rgba(238, 246, 250, 0.19) 82.82%, 
+                rgba(237, 248, 252, 0) 107.25%);
+}
+
+
 .logo{
     float: left;
     padding-top: 12.5px;
@@ -87,6 +146,7 @@ ul{
     color: #414141;
 }
 .search button{
+    float: left;
     padding: 14px 20px 12px 15px;
     background: none;
     border: none;
