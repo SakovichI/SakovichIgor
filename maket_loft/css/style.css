@@ -409,11 +409,9 @@ div > h2 {
   position: relative;
   margin-right: 30px;
 }
-
 .catalog li:nth-child(n + 4) {
   margin-right: 0px;
 }
-
 .catalog img {
   margin: 74px 32px 0px 31px;
   width: 200px;
