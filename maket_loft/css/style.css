@@ -13,6 +13,7 @@ ul {
 }
 .header {
   background-color: #313131;
+  height: 38px;
 }
 .contain {
   max-width: 1140px;
@@ -22,7 +23,7 @@ ul {
 .contain .head {
   list-style: none;
 }
-.head a {
+.head a{
   padding: 10px 30px 12px 0px;
   float: left;
   text-decoration: none;
@@ -418,7 +419,9 @@ div > h2 {
   width: 200px;
   height: 150px;
 }
-.catalog svg {
+.catalog button.like{
+  border: none;
+  background-color: #ffffff;
   position: absolute;
   right: 15.5px;
   top: 25px;
@@ -526,7 +529,7 @@ ul.catalog span.size {
   line-height: 11px;
   color: #414141;
 }
-.catalog button {
+.catalog button:last-of-type {
   width: 223px;
   height: 40px;
   margin: 0px 20px 20px 20px;
