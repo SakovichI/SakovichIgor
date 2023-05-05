@@ -71,6 +71,9 @@ ul {
   display: none;
   float: left;
 }
+.hamburger_menu .btn{
+  padding: 11px 25px;
+}
 .hamburger_menu .btn:focus {
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.25);
 }
@@ -240,8 +243,39 @@ ul {
 .search_item svg {
   margin: 0px 0px 0px 29px;
 }
-.search_item svg:last-child {
+.search_item svg:last-of-type {
   padding: 0px 0px 0px 0px;
+}
+.search_item a{
+  display: none;
+  text-decoration: none;
+  font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+color: #414141;
+}
+.search_item a svg{
+  margin-right: 10px;
+}
+.search_item a svg path{
+  stroke: #000000;
+}
+.search_item span{
+  display: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #414141;
+}
+.search_item span svg{
+  margin-right: 10px;
+}
+.search_item span svg path{
+  fill: #000000;
 }
 
 .menu_nav {
@@ -310,7 +344,7 @@ ul {
 .menu_nav > li:nth-child(7) span {
   color: #d74444;
 }
-.menu_nav > li svg:last-child {
+.menu_nav > li:last-child svg {
   margin: 28px 0px 28px 0px;
 }
 
@@ -326,6 +360,16 @@ ul {
   line-height: 140.8%;
   letter-spacing: 0.04em;
   color: #414141;
+}
+.carousel-item:nth-of-type(1){
+  background: url(../img/jpg/banner_1.jpg) no-repeat;
+  width: 1140px;
+  height: 450px;
+}
+.carousel-item:nth-of-type(2){
+  background: url(../img/jpg/banner_2.jpg) no-repeat;
+  width: 1140px;
+  height: 450px;
 }
 .carousel-control-next,
 .carousel-control-prev {
@@ -357,7 +401,12 @@ ul {
   left: 120px;
   top: 70px;
 }
-.carousel-caption h1 {
+.carousel-item:nth-of-type(1) h1 {
+  text-align: start;
+  z-index: 1;
+  position: absolute;
+  left: 120px;
+  top: 100px;
   font-family: "Playfair Display";
   font-style: normal;
   font-weight: 700;
@@ -367,7 +416,12 @@ ul {
   text-transform: uppercase;
   color: #3c3c3c;
 }
-.carousel-caption p {
+.carousel-item:nth-of-type(1) p {
+  text-align: start;
+  z-index: 1;
+  position: absolute;
+  left: 120px;
+  top: 221px;
   margin-top: 15px;
   margin-bottom: 20px;
   font-family: "Roboto Condensed";
@@ -378,7 +432,12 @@ ul {
   letter-spacing: 0.02em;
   color: #343434;
 }
-.carousel-caption a {
+.carousel-item:nth-of-type(1) a {
+  text-align: start;
+  z-index: 1;
+  position: absolute;
+  left: 120px;
+  top: 264px;
   background-color: #ffffff;
   padding: 14px 25px 14px 25px;
   text-decoration: none;
@@ -400,16 +459,14 @@ div > h2 {
   line-height: 19px;
   color: #414141;
 }
-.catalog > li {
+.catalog  li {
   width: 258px;
-  height: 358px;
-  overflow: hidden;
   float: left;
   background: #ffffff;
   position: relative;
   margin-right: 30px;
 }
-.catalog li:nth-child(n + 4) {
+ul.catalog li:nth-child(4n+4){
   margin-right: 0px;
 }
 .catalog img {
@@ -485,7 +542,15 @@ div > h2 {
 .catalog:nth-child(1) li:nth-child(3) .action {
   display: inline-block;
 }
-.catalog h4 {
+.name_size-btn{
+  display: none;
+  width: 258px;
+  position: absolute;
+  bottom: -128px;
+  left: 0px;
+  background-color: #ffffff;
+}
+.name_size-btn h4 {
   margin: 0px 0px 8px 20px;
   font-family: "Roboto";
   font-style: normal;
@@ -494,10 +559,10 @@ div > h2 {
   line-height: 14px;
   color: #414141;
 }
-.catalog div {
+.name_size-btn div {
   margin: -16px 0px -17px 0px;
 }
-.catalog span {
+.name_size-btn span {
   display: inline-block;
   margin: 0px 0px 0px 75px;
   font-family: "Roboto";
@@ -507,7 +572,7 @@ div > h2 {
   line-height: 14px;
   color: #414141;
 }
-ul.catalog span.name_size {
+.name_size-btn span.name_size {
   display: inline-block;
   margin: 0px 17px 0px 20px;
   font-family: "Roboto";
@@ -517,7 +582,7 @@ ul.catalog span.name_size {
   line-height: 11px;
   color: #c4c4c4;
 }
-ul.catalog span.size {
+.name_size-btn span.size {
   display: inline-block;
   margin: 0px 33px 17px 20px;
   font-family: "Roboto";
@@ -527,10 +592,10 @@ ul.catalog span.size {
   line-height: 11px;
   color: #414141;
 }
-.catalog button:last-of-type {
+.name_size-btn button {
   width: 223px;
   height: 40px;
-  margin: 0px 20px 20px 20px;
+  margin: 0px 17.5px 20px 17.5px;
   border: none;
   background-color: #245462;
   font-family: "Roboto";
@@ -540,12 +605,15 @@ ul.catalog span.size {
   line-height: 15px;
   color: #ffffff;
 }
-.catalog li:hover {
-  height: 488px;
-  box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
+.catalog li:hover .name_size-btn {
+  display:unset;
+  z-index: 2;
   transition: 1s;
 }
-
+.catalog li:hover{
+  z-index: 3;
+box-shadow: 0px 1px 9px rgba(0, 0, 0, 0.11);
+}
 .footer {
   margin-top: 10px;
   box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.03);
