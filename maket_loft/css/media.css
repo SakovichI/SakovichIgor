@@ -1,0 +1,27 @@
+@media all and (max-width: 960px){
+  .header{
+    background-color: transparent;
+  }
+   .header_menu{
+    display: none;
+   } 
+   .hamburger_menu{
+    display: unset;
+   }
+   .search {
+  position: relative;
+  margin: 20px 497px 0px 284px;
+   }
+   .search_item a{
+    display: unset;
+   }
+    .search_item span{
+    display: unset;
+   }
+   .menu_nav li{
+    padding: 0px 6px 0px 30px;
+   }
+   .menu_nav li:nth-child(7){
+    display: none;
+   }
+}

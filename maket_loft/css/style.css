@@ -321,6 +321,11 @@ color: #414141;
   width: 190px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
 }
+.menu_nav li:last-child .menu_nav_level2{
+  position: absolute;
+  top: 68px;
+  left: -100px;
+}
 .menu_nav li .menu_nav_level2 a {
   display: block;
   text-decoration: none;
