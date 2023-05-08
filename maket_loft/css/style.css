@@ -352,7 +352,9 @@ color: #414141;
 .menu_nav > li:last-child svg {
   margin: 28px 0px 28px 0px;
 }
-
+.carousel-inner{
+  margin-top: 30px;
+}
 .carousel-indicators a {
   padding: 14px 25px 14px 25px;
   background-color: #ffffff;
@@ -452,6 +454,34 @@ color: #414141;
   font-size: 12px;
   line-height: 140.8%;
   letter-spacing: 0.04em;
+  color: #414141;
+}
+.carousel-item:nth-of-type(1) h2{
+  display: none;
+  text-align: start;
+  z-index: 1;
+  position: absolute;
+  left: 58px;
+  top: 85px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.carousel-item:nth-of-type(1) h3{
+  display: none;
+  text-align: start;
+  z-index: 1;
+  position: absolute;
+  left: 15px;
+  top: 73.61px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 103.3%;
   color: #414141;
 }
 
