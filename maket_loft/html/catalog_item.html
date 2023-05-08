@@ -18,24 +18,13 @@
       href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Playfair+Display:wght@700&family=Roboto+Condensed&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../css/catalog_item_style.css" />
+    <link rel="stylesheet" href="../css/catalog_item_media.css">
     <title>Document</title>
   </head>
   <body>
-    <div class="header">
       <div class="contain">
-        <div class="header_menu clearfix">
-          <ul class="head">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          <div class="menu_right">
-            <a href="tel:89648999119">8 (964) 89 99 119</a>
-            <span>Доставка</span>
-          </div>
-        </div>
 
         <!-- Меню с поисковиком -->
 
@@ -180,6 +169,11 @@
               />
             </svg>
           </div>
+          <ul class="head_menu">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
           <div class="search_item">
             <a href="tel:89648999119">
               <svg
@@ -577,78 +571,74 @@
           </li>
         </ul>
 
-        <!-- Карусель галереи -->
 
-        <div id="carouselExampleControls" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <h1>
-                loft<br />
-                мебель
-              </h1>
-              <h2>Современная<br> 
-                и удобная мебель</h2>
-              <p>Современная и удобная мебель в Анапе</p>
-              <h3>С доставкой по 
-                Краснодарскому краю</h3>
-              <a href="#">Смотреть каталог</a>
+        <!-- Крошки-->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item"><a href="#">Библиотека</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Данные</li>
+          </ol>
+        </nav>
+
+        <!-- карточка товара -->
+        <div class="wrap">
+        <div class="catalog_item__slider">
+          <div class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../img/png/main_catalog-slider.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/png/main_catalog-slider.png" />
+              </div>
             </div>
-
-            <div class="carousel-item">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="../img/png/main_catalog-slider.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/png/catalog-slider2.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/png/catalog-slider3.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/png/catalog-slider4.png" />
+              </div>
+              <div class="swiper-slide">
+                <img src="../img/png/catalog-slider5.png" />
+              </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true">
-              <svg
-                width="8"
-                height="12"
-                viewBox="0 0 8 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 2L2 6L6 10"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="square"
-                />
-              </svg>
-            </span>
-            <span class="visually-hidden">Предыдущий</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true">
-              <svg
-                width="8"
-                height="12"
-                viewBox="0 0 8 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6 2L2 6L6 10"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="square"
-                />
-              </svg>
-            </span>
-            <span class="visually-hidden">Следующий</span>
-          </button>
         </div>
-        <h2>Хиты продаж</h2>
+          <div class="prodact_description">
+            <ul class="stars">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <h1></h1>
+            <h2></h2>
+            <h3></h3>
+            <a href="" class="buy"></a>
+            <a href="" class="desired"></a>
+            <h4></h4>
+            <p class="description__text"></p>
+          </div>
+        </div>
+
+        
 
         <!-- Каталог товаров -->
+
+        <h2>Хиты продаж</h2>
         <div>
           <ul class="catalog clearfix">
             <li>
@@ -2020,5 +2010,10 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js">
+
+    </script>
+    <script src="../js/catalog_item.js">
+    </script>
   </body>
 </html>
