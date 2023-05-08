@@ -105,7 +105,19 @@
 
 @media all and (max-width: 768px){
   .contain{
+    max-width: 768px;
+  }
+  .menu_nav,
+  .carousel,
+  .catalog{
     max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div > h2{
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .header{
     background-color: transparent;
@@ -129,6 +141,16 @@
    .menu_nav li{
     padding: 0px 6px 0px 30px;
    }
+   .menu_nav li:last-child .menu_nav_level2{
+    position: absolute;
+    left: -100px;
+   }
+   .menu_nav li .menu_nav_level2{
+    width: 174px;
+   }
+   .menu_nav li .menu_nav_level2 a {
+    padding: 15px;
+  }
    .carousel-item:nth-of-type(1){
     background: url(../img/png/sofa_768px.png) no-repeat 227px 42px,
                 url(../img/png/image\ 4_768px.png) no-repeat 610px 2px, 
@@ -190,6 +212,37 @@
    .menu_nav li:nth-child(6){
     display: none;
    }
+   .catalog  li {
+    width: 220px;
+   }
+   .name_size-btn{
+    width: 220px;
+   }
+   .name_size-btn button{
+    width: 180px;
+   }
+   .name_size-btn span.name_size{
+    margin-right: 10px;
+   }
+   .name_size-btn span {
+    margin-left: 71px;
+  }
+  .name_size-btn span.size{
+    margin-right: 24px;
+  }
+   .catalog img {
+    margin: 74px 32px 0px 31px;
+    width: 160px;
+    height: 120px;
+  }
+  .catalog h1 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .catalog h3 {
+    font-size: 14px;
+    line-height: 16px;
+  }
    ul.catalog li:nth-child(4n+4){
     margin-right: 30px;
   }
