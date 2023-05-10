@@ -368,13 +368,25 @@ ul {
 .swiper-button-next {
   margin-left: 20px;
 }
+.prodact_description{
+  position: relative;
+}
 .stars {
   display: flex;
   gap: 3px;
   margin-bottom: 16px;
 }
+.stars li:nth-child(1):hover path{
+  fill: #686868;
+}
+.stars li:nth-child(2):hover path{
+  fill: #686868;
+}
+.stars li:nth-child(2):hover ~ li path{
+  fill: #686868;
+}
 .prodact_description h1 {
-  margin-bottom: 10px;
+  margin: 0px 0px 16px 0px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -383,7 +395,7 @@ ul {
   color: #414141;
 }
 .prodact_description h2 {
-  margin-bottom: 19px;
+  margin: 0px 0px 19px 0px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -393,8 +405,7 @@ ul {
 }
 .prodact_description h3 {
   display: inline-block;
-  margin-bottom: 21px;
-  margin-right: 31px;
+  margin: 0px 31px 21px 0px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -404,7 +415,7 @@ ul {
 }
 .buy {
   padding: 13px 50px;
-  margin-right: 20px;
+  margin: 0px 21px 0px 0px;
   background-color: #245462;
   text-decoration: none;
   font-family: "Roboto";
@@ -445,25 +456,53 @@ ul {
   line-height: 18px;
   color: #686868;
 }
-.prodact_description select{
-  width: 30px;
-  height: 30px;
+.prodact_description form{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px 0px;
+  align-items: end;
+  margin-bottom: 20px;
 }
-.color option:nth-child(1){
-  width: 30px;
-  height: 30px;
-  background-color: yellow;
-  color: yellow;
+.prodact_description label{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #414141;
 }
-.color option:nth-child(2){
+input.color{
+  grid-area: 2/1/2/1;
   width: 30px;
   height: 30px;
-  background-color: blue;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+  border: none;
 }
-.color option:nth-child(3){
-  width: 30px;
+.amount{
+  grid-area: 2/2/2/2;
+  width: 46px;
   height: 30px;
-  background-color: green;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+  border: none;
+}
+.size{
+  grid-area: 2/3/2/3;
+  height: 30px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #414141;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+  border: none;
 }
 
 div > h2 {

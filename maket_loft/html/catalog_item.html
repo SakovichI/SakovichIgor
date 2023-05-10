@@ -655,10 +655,23 @@
               </svg>
               Добавить в желаемое</a>
             <form action="" method="get">
-              <select class="color" name="color">
-                <option value="Yellow">1</option>
-                <option value="Blue">2</option>
-                <option value="green">3</option>
+            <label for="color">Цвет</label>
+            <input class="color" type="color" value="#FFC107" list="color">
+            <datalist id="color">
+              <option value="#ffffff">
+              <option value="#000000">
+            </datalist>
+            <label for="amount">Количество</label>
+            <select class="amount" name="amount" id="">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="2">3</option>
+            </select>
+            <label for="size">Размеры</label>
+            <select class="size" name="size" id="">
+              <option value="1">218СМ х 98СМ х 58СМ</option>
+              <option value="2">218СМ х 98СМ х 58СМ</option>
+              <option value="2">218СМ х 98СМ х 58СМ</option>
             </select>
             </form>
             <h4>Описание</h4>
