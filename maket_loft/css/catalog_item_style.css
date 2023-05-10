@@ -315,6 +315,27 @@ ul {
 .menu_nav > li:last-child svg {
   margin: 28px 0px 28px 0px;
 }
+.breadcrumb{
+  margin: 30px 0px 20px 0px;
+}
+.breadcrumb-item a{
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #969696;
+}
+.breadcrumb-item.active{
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  color: #969696;
+}
 .wrap {
   display: flex;
   gap: 30px;
