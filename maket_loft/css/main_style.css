@@ -965,10 +965,166 @@ select.size{
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
   border: none;
 }
-
-
-
-
+.wraper.info{
+  margin: 18px 0px 70px 0px;
+  height: 500px;
+  background: url(../img/jpg/fon_info.jpg) no-repeat top right,
+              url(../img/jpg/линия.jpg) no-repeat left 110px;
+}
+.info__wrap{
+  display: flex;
+  gap: 48px;
+}
+.info__img{
+  display: inline-block;
+  margin: 89px -50px 72px 0px;
+}
+.info{
+  padding-top: 100px;
+  padding-left: 40px;
+}
+.info__title-about{
+  margin-bottom: 15px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+  color: #245462;
+}
+.info__title-main{
+  margin-bottom: 15px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #414141;
+}
+.info__title-text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #686868;
+}
+.dignity{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, min-content);
+  gap: 80px 64px;
+  align-items: end;
+  margin-bottom: 95px;
+}
+.dignity__title{
+  grid-area: 1/1/1/3;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.015em;
+  color: #414141;
+}
+.dignity__item{
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(2, min-content);
+  gap: 10px 30px;
+}
+.dignity__item svg{
+grid-area: 1/1/3/1;
+}
+.dignity__item-title{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #414141;
+}
+.dignity__item-text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #686868;
+}
+.wraper.advantages{
+  background-color: #D7E8ED;
+}
+.contain.advantages{
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 65px;
+  padding: 80px 0px;
+}
+.advantages__title{
+  margin: 0px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #414141;
+}
+.advantages__title::after{
+  content: url(../img/svg/info/Rectangle\ 57.svg);
+  display: block;
+  margin: 15px 0px;
+}
+.advantages__text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #686868;
+}
+.condition{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 30px 40px;
+  margin: 70px 0px 100px 0px;
+}
+.condition__items{
+  background-color: #F4F4F4;
+  padding: 25px;
+  position: relative;
+}
+.condition__items-icon{
+  position: absolute;
+  left: -23px;
+  top: -23px;
+}
+.condition__items-title{
+  padding-bottom: 10px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.015em;
+  color: #414141;
+}
+.condition__items-text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #686868;
+}
 
 .footer {
   margin-top: 10px;
