@@ -1,4 +1,9 @@
-a{
-    display: block;
-    margin-bottom: 10px;
+a {
+  display: block;
+  margin-bottom: 10px;
+}
+.video__wrap {
+  width: min-content;
+  height: 300px;
+  overflow: auto;
 }
