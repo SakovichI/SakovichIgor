@@ -332,7 +332,7 @@ ul {
 .menu_nav > li:hover .menu_nav_level2 {
   background-color: #ffffff;
   display: block;
-  z-index: 2;
+  z-index: 3;
 }
 .menu_nav li .menu_nav_level2 {
   list-style: none;
@@ -1741,10 +1741,16 @@ select.size {
 .filter {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 20px;
   padding: 20px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
   width: fit-content;
+}
+
+.filter__select {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
 
 .filter__title {
@@ -1788,6 +1794,68 @@ select.size {
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
+}
+
+.filter__price-range {
+  width: 223px;
+  text-align: center;
+}
+.price-range {
+  left: 5px;
+  margin-bottom: 10px;
+}
+.ui-widget-header {
+  background-color: #245462;
+}
+
+.ui-slider .ui-slider-handle {
+  width: 14px;
+  height: 14px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -1px;
+}
+
+.ui-slider-horizonta {
+  height: 10px;
+}
+
+.ui-widget-content {
+  border: none;
+  background: #ececec;
+  border-radius: 3px;
+}
+
+.ui-state-default,
+.ui-widget-content .ui-state-default {
+  background: #ffffff;
+  border: 3px solid #245462;
+  border-radius: 50%;
+}
+
+.price-range__values {
+  display: flex;
+  align-items: center;
+}
+
+.price-range__value {
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  background: #f8f8f8;
+  border-radius: 3px;
+  border: none;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #414141;
+}
+
+.price-range__value-icon {
+  margin: 0px 12px;
 }
 
 /*Футер*/

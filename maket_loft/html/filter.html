@@ -22,7 +22,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="../css/nouislider.css" />
+    <link
+      type="text/css"
+      href="../js/jquery-ui-1.9.2.custom/css/base/jquery-ui-1.9.2.custom.min.css"
+      rel="Stylesheet"
+    />
+
     <link rel="stylesheet" href="../css/main_style.css" />
     <link rel="stylesheet" href="../css/main_media.css" />
     <title>Document</title>
@@ -591,63 +596,81 @@
 
       <!-- основной фильтр -->
       <div class="filter">
-        <h5 class="filter__title">Раздел</h5>
-        <div class="select__wrap">
-          <svg
-            class="section__icon"
-            width="10"
-            height="6"
-            viewBox="0 0 10 6"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M1 1L5 5L9 1" stroke="#686868" stroke-linecap="square" />
-          </svg>
-          <select name="main-menu" class="section__item">
-            <option value="1" class="section__item-ctg">Гостинные</option>
-            <option value="2" class="section__item-ctg">Кухни</option>
-            <option value="3" class="section__item-ctg">Прихожая</option>
-            <option value="4" class="section__item-ctg">Детская</option>
-          </select>
+        <div class="filter__select">
+          <h5 class="filter__title">Раздел</h5>
+          <div class="select__wrap">
+            <svg
+              class="section__icon"
+              width="10"
+              height="6"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1 1L5 5L9 1" stroke="#686868" stroke-linecap="square" />
+            </svg>
+            <select name="main-menu" class="section__item">
+              <option value="1" class="section__item-ctg">Гостинные</option>
+              <option value="2" class="section__item-ctg">Кухни</option>
+              <option value="3" class="section__item-ctg">Прихожая</option>
+              <option value="4" class="section__item-ctg">Детская</option>
+            </select>
+          </div>
+          <div class="select__wrap">
+            <svg
+              class="section__icon"
+              width="10"
+              height="6"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1 1L5 5L9 1" stroke="#686868" stroke-linecap="square" />
+            </svg>
+            <select name="main-menu" class="section__item">
+              <option value="1" class="section__item-ctg">Гостинные</option>
+              <option value="2" class="section__item-ctg">Кухни</option>
+              <option value="3" class="section__item-ctg">Прихожая</option>
+              <option value="4" class="section__item-ctg">Детская</option>
+            </select>
+          </div>
+          <div class="select__wrap">
+            <svg
+              class="section__icon"
+              width="10"
+              height="6"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M1 1L5 5L9 1" stroke="#686868" stroke-linecap="square" />
+            </svg>
+            <select name="main-menu" class="section__item">
+              <option value="1" class="section__item-ctg">Гостинные</option>
+              <option value="2" class="section__item-ctg">Кухни</option>
+              <option value="3" class="section__item-ctg">Прихожая</option>
+              <option value="4" class="section__item-ctg">Детская</option>
+            </select>
+          </div>
         </div>
-        <div class="select__wrap">
-          <svg
-            class="section__icon"
-            width="10"
-            height="6"
-            viewBox="0 0 10 6"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M1 1L5 5L9 1" stroke="#686868" stroke-linecap="square" />
-          </svg>
-          <select name="main-menu" class="section__item">
-            <option value="1" class="section__item-ctg">Гостинные</option>
-            <option value="2" class="section__item-ctg">Кухни</option>
-            <option value="3" class="section__item-ctg">Прихожая</option>
-            <option value="4" class="section__item-ctg">Детская</option>
-          </select>
+        <div class="filter__price-range">
+          <h5 class="filter__title">Цена</h5>
+          <div id="slider-range" class="price-range"></div>
+          <p class="price-range__values">
+            <input class="price-range__value" type="text" id="amount1" />
+            <svg
+            class="price-range__value-icon"
+              width="19"
+              height="2"
+              viewBox="0 0 19 2"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect width="19" height="2" fill="#414141" />
+            </svg>
+            <input class="price-range__value" type="text" id="amount2" />
+          </p>
         </div>
-        <div class="select__wrap">
-          <svg
-            class="section__icon"
-            width="10"
-            height="6"
-            viewBox="0 0 10 6"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M1 1L5 5L9 1" stroke="#686868" stroke-linecap="square" />
-          </svg>
-          <select name="main-menu" class="section__item">
-            <option value="1" class="section__item-ctg">Гостинные</option>
-            <option value="2" class="section__item-ctg">Кухни</option>
-            <option value="3" class="section__item-ctg">Прихожая</option>
-            <option value="4" class="section__item-ctg">Детская</option>
-          </select>
-        </div>
-        <h5 class="filter__title">Цена</h5>
-        <div id="slider"></div>
       </div>
 
       <!-- Каталог товаров -->
@@ -1041,7 +1064,14 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="../js/nouislider.js"></script>
+    <script
+      type="text/javascript"
+      src="../js/jquery-ui-1.9.2.custom/js/jquery-1.8.3.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../js/jquery-ui-1.9.2.custom/js/jquery-ui-1.9.2.custom.min.js"
+    ></script>
     <script src="../js/catalog_item.js"></script>
   </body>
 </html>
