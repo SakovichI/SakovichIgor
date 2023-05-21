@@ -9,8 +9,8 @@ $("#slider-range").slider({
   }
 });
 
-$( "#amount1" ).val($( " #slider-range ") + " ₽".slider( "values", 0 ) );
-$( "#amount2" ).val($( " #slider-range ") + " ₽".slider( "values", 1 ) );
+$( "#amount1" ).val($( "#slider-range ").slider( "values", 0 ) + " ₽" );
+$( "#amount2" ).val($( "#slider-range ").slider( "values", 1 )  + " ₽" );
 
 
 
