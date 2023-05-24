@@ -318,9 +318,8 @@ ul {
   margin: 0px 0px 0px 19px;
 }
 
-.search_item a:focus path {
-  fill: #000000;
-}
+
+
 
 .search_item a svg {
   margin-right: 10px;
