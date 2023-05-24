@@ -389,91 +389,113 @@
     </nav>
 
     <!-- основной фильтр -->
-    <div class="filter">
-      <div class="filter__select">
-        <h5 class="filter__title">Раздел</h5>
-        <div class="select__wrap">
-          <svg class="section__icon" width="10" height="6" viewBox="0 0 10 6" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L5 5L9 1" stroke="#686868" stroke-linecap="square" />
-          </svg>
-          <select name="main-menu" class="section__item">
-            <option value="1" class="section__item-ctg">Гостинные</option>
-            <option value="2" class="section__item-ctg">Кухни</option>
-            <option value="3" class="section__item-ctg">Прихожая</option>
-            <option value="4" class="section__item-ctg">Детская</option>
-          </select>
-        </div>
-        <div class="select__wrap">
-          <svg class="section__icon" width="10" height="6" viewBox="0 0 10 6" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L5 5L9 1" stroke="#686868" stroke-linecap="square" />
-          </svg>
-          <select name="main-menu" class="section__item">
-            <option value="1" class="section__item-ctg">Гостинные</option>
-            <option value="2" class="section__item-ctg">Кухни</option>
-            <option value="3" class="section__item-ctg">Прихожая</option>
-            <option value="4" class="section__item-ctg">Детская</option>
-          </select>
-        </div>
-        <div class="select__wrap">
-          <svg class="section__icon" width="10" height="6" viewBox="0 0 10 6" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L5 5L9 1" stroke="#686868" stroke-linecap="square" />
-          </svg>
-          <select name="main-menu" class="section__item">
-            <option value="1" class="section__item-ctg">Гостинные</option>
-            <option value="2" class="section__item-ctg">Кухни</option>
-            <option value="3" class="section__item-ctg">Прихожая</option>
-            <option value="4" class="section__item-ctg">Детская</option>
-          </select>
-        </div>
-      </div>
-      <div class="filter__price-range">
-        <h5 class="filter__title">Цена</h5>
-        <div id="slider-range" class="price-range"></div>
-        <p class="price-range__values">
-          <input class="price-range__value" type="text" id="amount1" />
-          <svg class="price-range__value-icon" width="19" height="2" viewBox="0 0 19 2" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <rect width="19" height="2" fill="#414141" />
-          </svg>
-          <input class="price-range__value" type="text" id="amount2" />
-        </p>
-      </div>
-      <div class="filter__color-check">
-        <h5 class="filter__title">Цвет</h5>
-        <div class="color-check__items">
-          <input type="checkbox" class="color-check__stand" id="orange">
-          <label for="orange" class="color-check__item"></label>
-        </div>
-      </div>
-    </div>
-
-    <!-- Каталог товаров -->
-
-    <div>
-      <ul class="catalog clearfix">
-        <li>
-          <img src="../img/jpg/catalog/image_2.jpg" alt="Валенсия Beige" />
-          <button type="submit" class="like">
-            <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M2.29442 8.54442L9.75 16L17.2056 8.54442C18.0344 7.71562 18.5 6.59152 18.5 5.41942C18.5 2.97864 16.5214 1 14.0806 1C12.9085 1 11.7844 1.46562 10.9556 2.29442L9.75 3.5L8.54442 2.29442C7.71562 1.46562 6.59152 1 5.41942 1C2.97864 1 1 2.97864 1 5.41942C1 6.59152 1.46561 7.71561 2.29442 8.54442Z"
-                stroke="black" stroke-linejoin="round" />
+    <main class="inner">
+      <div class="filter">
+        <div class="filter__select">
+          <h5 class="filter__title">Раздел</h5>
+          <div class="select__wrap">
+            <svg class="section__icon" width="10" height="6" viewBox="0 0 10 6" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L9 1" stroke="#686868" stroke-linecap="square" />
             </svg>
-          </button>
-          <span class="action">-25%
-            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.46429 7.07143H7.67857M11.3214 11.9286H12.5357M12.5357 6.46429L6.46429 12.5357M8.65177 1.35135L7.28081 2.7223C7.05585 2.94727 6.75073 3.07365 6.43258 3.07365H4.27324C3.61073 3.07365 3.07365 3.61073 3.07365 4.27324V6.43258C3.07365 6.75073 2.94727 7.05585 2.7223 7.28081L1.35135 8.65177C0.882883 9.12023 0.882883 9.87977 1.35135 10.3482L2.7223 11.7192C2.94727 11.9442 3.07365 12.2493 3.07365 12.5674V14.7268C3.07365 15.3893 3.61073 15.9263 4.27324 15.9263H6.43258C6.75073 15.9263 7.05585 16.0527 7.28081 16.2777L8.65177 17.6486C9.12023 18.1171 9.87977 18.1171 10.3482 17.6486L11.7192 16.2777C11.9442 16.0527 12.2493 15.9263 12.5674 15.9263H14.7268C15.3893 15.9263 15.9263 15.3893 15.9263 14.7268V12.5674C15.9263 12.2493 16.0527 11.9442 16.2777 11.7192L17.6486 10.3482C18.1171 9.87977 18.1171 9.12023 17.6486 8.65177L16.2777 7.28081C16.0527 7.05585 15.9263 6.75073 15.9263 6.43258V4.27324C15.9263 3.61073 15.3893 3.07365 14.7268 3.07365H12.5674C12.2493 3.07365 11.9442 2.94727 11.7192 2.7223L10.3482 1.35135C9.87977 0.882883 9.12023 0.882883 8.65177 1.35135Z"
-                stroke="#E92D2D" />
+            <select name="main-menu" class="section__item">
+              <option value="1" class="section__item-ctg">Гостинные</option>
+              <option value="2" class="section__item-ctg">Кухни</option>
+              <option value="3" class="section__item-ctg">Прихожая</option>
+              <option value="4" class="section__item-ctg">Детская</option>
+            </select>
+          </div>
+          <div class="select__wrap">
+            <svg class="section__icon" width="10" height="6" viewBox="0 0 10 6" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L9 1" stroke="#686868" stroke-linecap="square" />
             </svg>
-          </span>
-          <h1>Валенсия Beige</h1>
-          <h2>Барные стулья</h2>
-          <h3>2 300₽ <span>37 990₽</span></h3>
-          <div class="name_size-btn">
+            <select name="main-menu" class="section__item">
+              <option value="1" class="section__item-ctg">Гостинные</option>
+              <option value="2" class="section__item-ctg">Кухни</option>
+              <option value="3" class="section__item-ctg">Прихожая</option>
+              <option value="4" class="section__item-ctg">Детская</option>
+            </select>
+          </div>
+          <div class="select__wrap">
+            <svg class="section__icon" width="10" height="6" viewBox="0 0 10 6" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L5 5L9 1" stroke="#686868" stroke-linecap="square" />
+            </svg>
+            <select name="main-menu" class="section__item">
+              <option value="1" class="section__item-ctg">Гостинные</option>
+              <option value="2" class="section__item-ctg">Кухни</option>
+              <option value="3" class="section__item-ctg">Прихожая</option>
+              <option value="4" class="section__item-ctg">Детская</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter__price-range">
+          <h5 class="filter__title">Цена</h5>
+          <div id="slider-range" class="price-range"></div>
+          <p class="price-range__values">
+            <input class="price-range__value" type="text" id="amount1" />
+            <svg class="price-range__value-icon" width="19" height="2" viewBox="0 0 19 2" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <rect width="19" height="2" fill="#414141" />
+            </svg>
+            <input class="price-range__value" type="text" id="amount2" />
+          </p>
+        </div>
+        <div class="filter__color-check">
+          <h5 class="filter__title">Цвет</h5>
+          <div class="color-check__items">
+            <input type="checkbox" class="color-check__stand" id="[orange]">
+            <label for="[orange]" class="color-check__item"></label>
+            <input type="checkbox" class="color-check__stand" id="[gra]" checked>
+            <label for="[gra]" class="color-check__item"></label>
+            <input type="checkbox" class="color-check__stand" id="[gray]">
+            <label for="[gray]" class="color-check__item"></label>
+            <input type="checkbox" class="color-check__stand" id="[black]">
+            <label for="[black]" class="color-check__item"></label>
+            <input type="checkbox" class="color-check__stand" id="[ower-gray]">
+            <label for="[ower-gray]" class="color-check__item"></label>
+            <input type="checkbox" class="color-check__stand" id="[brown]">
+            <label for="[brown] class=" color-check__item"></label>
+          </div>
+        </div>
+        <div class="filter__brend-check">
+          <h5 class="filter__title">Бренд</h5>
+          <div class="brend-check__inner">
+            <input type="checkbox" class="brend-check__item" id="[dins]">
+            <label for="[dins]" class="brend-check__name">Динс</label>
+            <input type="checkbox" class="brend-check__item" id="[kusken]">
+            <label for="[kusken]" class="brend-check__name">Кускен</label>
+            <input type="checkbox" class="brend-check__item" id="[ebi]">
+            <label for="[ebi]" class="brend-check__name">Эби</label>
+            <input type="checkbox" class="brend-check__item" id="[rejio]">
+            <label for="[rejio]" class="brend-check__name">Реджио</label>
+            <input type="checkbox" class="brend-check__item" id="[sale]">
+            <label for="[sale]" class="brend-check__name">Сайле</label>
+          </div>
+        </div>
+        <a href="#" class="filter__link">Показать еще</a>
+      </div>
+      <div class="sort__inner">
+        <div class="sort__name">Сортировать</div>
+        <button class="sort__btn" type="button">
+          <svg width="19" height="11" viewBox="0 0 19 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.666666 1.22222H19V0H0.666666V1.22222ZM11.6667 6.11111H19V4.88889H11.6667V6.11111ZM8 11H19V9.77778H8V11Z"
+              fill="black" />
+          </svg>
+          <ul class="sort__menu sort__menu_active">
+            <li class="sort__menu-item"><a href="#" class="sort__menu-link">по убыванию цены</a></li>
+            <li class="sort__menu-item"><a href="#" class="sort__menu-link">по возрастанию цены</a></li>
+            <li class="sort__menu-item"><a href="#" class="sort__menu-link">по популярности</a></li>
+          </ul>
+        </button>
+      </div>
+      <!-- Каталог товаров -->
+
+      <div>
+        <ul class="catalog clearfix">
+          <li>
             <img src="../img/jpg/catalog/image_2.jpg" alt="Валенсия Beige" />
             <button type="submit" class="like">
               <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -492,36 +514,36 @@
             <h1>Валенсия Beige</h1>
             <h2>Барные стулья</h2>
             <h3>2 300₽ <span>37 990₽</span></h3>
-            <h4>Размеры</h4>
-            <span class="name_size">ШИРИНА</span>
-            <span class="name_size">ГЛУБИНА</span>
-            <span class="name_size">ВЫСОТА</span>
-            <div><span>x</span> <span>x</span></div>
-            <span class="size">43 СМ</span> <span class="size">43 СМ</span>
-            <span class="size">77 СМ</span>
-            <button type="button">Добавить в корзину</button>
-          </div>
-        </li>
-        <li>
-          <img src="../img/jpg/catalog/image_2.png" alt="Валенсия Beige" />
-          <button type="submit" class="like">
-            <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M2.29442 8.54442L9.75 16L17.2056 8.54442C18.0344 7.71562 18.5 6.59152 18.5 5.41942C18.5 2.97864 16.5214 1 14.0806 1C12.9085 1 11.7844 1.46562 10.9556 2.29442L9.75 3.5L8.54442 2.29442C7.71562 1.46562 6.59152 1 5.41942 1C2.97864 1 1 2.97864 1 5.41942C1 6.59152 1.46561 7.71561 2.29442 8.54442Z"
-                stroke="black" stroke-linejoin="round" />
-            </svg>
-          </button>
-          <span class="action">-25%
-            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.46429 7.07143H7.67857M11.3214 11.9286H12.5357M12.5357 6.46429L6.46429 12.5357M8.65177 1.35135L7.28081 2.7223C7.05585 2.94727 6.75073 3.07365 6.43258 3.07365H4.27324C3.61073 3.07365 3.07365 3.61073 3.07365 4.27324V6.43258C3.07365 6.75073 2.94727 7.05585 2.7223 7.28081L1.35135 8.65177C0.882883 9.12023 0.882883 9.87977 1.35135 10.3482L2.7223 11.7192C2.94727 11.9442 3.07365 12.2493 3.07365 12.5674V14.7268C3.07365 15.3893 3.61073 15.9263 4.27324 15.9263H6.43258C6.75073 15.9263 7.05585 16.0527 7.28081 16.2777L8.65177 17.6486C9.12023 18.1171 9.87977 18.1171 10.3482 17.6486L11.7192 16.2777C11.9442 16.0527 12.2493 15.9263 12.5674 15.9263H14.7268C15.3893 15.9263 15.9263 15.3893 15.9263 14.7268V12.5674C15.9263 12.2493 16.0527 11.9442 16.2777 11.7192L17.6486 10.3482C18.1171 9.87977 18.1171 9.12023 17.6486 8.65177L16.2777 7.28081C16.0527 7.05585 15.9263 6.75073 15.9263 6.43258V4.27324C15.9263 3.61073 15.3893 3.07365 14.7268 3.07365H12.5674C12.2493 3.07365 11.9442 2.94727 11.7192 2.7223L10.3482 1.35135C9.87977 0.882883 9.12023 0.882883 8.65177 1.35135Z"
-                stroke="#E92D2D" />
-            </svg>
-          </span>
-          <h1>Толикс-2 White Gloss</h1>
-          <h2>Барные стулья</h2>
-          <h3>4 690₽ <span>37 990₽</span></h3>
-          <div class="name_size-btn">
+            <div class="name_size-btn">
+              <img src="../img/jpg/catalog/image_2.jpg" alt="Валенсия Beige" />
+              <button type="submit" class="like">
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.29442 8.54442L9.75 16L17.2056 8.54442C18.0344 7.71562 18.5 6.59152 18.5 5.41942C18.5 2.97864 16.5214 1 14.0806 1C12.9085 1 11.7844 1.46562 10.9556 2.29442L9.75 3.5L8.54442 2.29442C7.71562 1.46562 6.59152 1 5.41942 1C2.97864 1 1 2.97864 1 5.41942C1 6.59152 1.46561 7.71561 2.29442 8.54442Z"
+                    stroke="black" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <span class="action">-25%
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.46429 7.07143H7.67857M11.3214 11.9286H12.5357M12.5357 6.46429L6.46429 12.5357M8.65177 1.35135L7.28081 2.7223C7.05585 2.94727 6.75073 3.07365 6.43258 3.07365H4.27324C3.61073 3.07365 3.07365 3.61073 3.07365 4.27324V6.43258C3.07365 6.75073 2.94727 7.05585 2.7223 7.28081L1.35135 8.65177C0.882883 9.12023 0.882883 9.87977 1.35135 10.3482L2.7223 11.7192C2.94727 11.9442 3.07365 12.2493 3.07365 12.5674V14.7268C3.07365 15.3893 3.61073 15.9263 4.27324 15.9263H6.43258C6.75073 15.9263 7.05585 16.0527 7.28081 16.2777L8.65177 17.6486C9.12023 18.1171 9.87977 18.1171 10.3482 17.6486L11.7192 16.2777C11.9442 16.0527 12.2493 15.9263 12.5674 15.9263H14.7268C15.3893 15.9263 15.9263 15.3893 15.9263 14.7268V12.5674C15.9263 12.2493 16.0527 11.9442 16.2777 11.7192L17.6486 10.3482C18.1171 9.87977 18.1171 9.12023 17.6486 8.65177L16.2777 7.28081C16.0527 7.05585 15.9263 6.75073 15.9263 6.43258V4.27324C15.9263 3.61073 15.3893 3.07365 14.7268 3.07365H12.5674C12.2493 3.07365 11.9442 2.94727 11.7192 2.7223L10.3482 1.35135C9.87977 0.882883 9.12023 0.882883 8.65177 1.35135Z"
+                    stroke="#E92D2D" />
+                </svg>
+              </span>
+              <h1>Валенсия Beige</h1>
+              <h2>Барные стулья</h2>
+              <h3>2 300₽ <span>37 990₽</span></h3>
+              <h4>Размеры</h4>
+              <span class="name_size">ШИРИНА</span>
+              <span class="name_size">ГЛУБИНА</span>
+              <span class="name_size">ВЫСОТА</span>
+              <div><span>x</span> <span>x</span></div>
+              <span class="size">43 СМ</span> <span class="size">43 СМ</span>
+              <span class="size">77 СМ</span>
+              <button type="button">Добавить в корзину</button>
+            </div>
+          </li>
+          <li>
             <img src="../img/jpg/catalog/image_2.png" alt="Валенсия Beige" />
             <button type="submit" class="like">
               <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -540,36 +562,36 @@
             <h1>Толикс-2 White Gloss</h1>
             <h2>Барные стулья</h2>
             <h3>4 690₽ <span>37 990₽</span></h3>
-            <h4>Размеры</h4>
-            <span class="name_size">ШИРИНА</span>
-            <span class="name_size">ГЛУБИНА</span>
-            <span class="name_size">ВЫСОТА</span>
-            <div><span>x</span> <span>x</span></div>
-            <span class="size">43 СМ</span> <span class="size">43 СМ</span>
-            <span class="size">77 СМ</span>
-            <button type="button">Добавить в корзину</button>
-          </div>
-        </li>
-        <li>
-          <img src="../img/jpg/catalog/image_3.png" alt="Валенсия Beige" />
-          <button type="submit" class="like">
-            <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M2.29442 8.54442L9.75 16L17.2056 8.54442C18.0344 7.71562 18.5 6.59152 18.5 5.41942C18.5 2.97864 16.5214 1 14.0806 1C12.9085 1 11.7844 1.46562 10.9556 2.29442L9.75 3.5L8.54442 2.29442C7.71562 1.46562 6.59152 1 5.41942 1C2.97864 1 1 2.97864 1 5.41942C1 6.59152 1.46561 7.71561 2.29442 8.54442Z"
-                stroke="black" stroke-linejoin="round" />
-            </svg>
-          </button>
-          <span class="action">-25%
-            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.46429 7.07143H7.67857M11.3214 11.9286H12.5357M12.5357 6.46429L6.46429 12.5357M8.65177 1.35135L7.28081 2.7223C7.05585 2.94727 6.75073 3.07365 6.43258 3.07365H4.27324C3.61073 3.07365 3.07365 3.61073 3.07365 4.27324V6.43258C3.07365 6.75073 2.94727 7.05585 2.7223 7.28081L1.35135 8.65177C0.882883 9.12023 0.882883 9.87977 1.35135 10.3482L2.7223 11.7192C2.94727 11.9442 3.07365 12.2493 3.07365 12.5674V14.7268C3.07365 15.3893 3.61073 15.9263 4.27324 15.9263H6.43258C6.75073 15.9263 7.05585 16.0527 7.28081 16.2777L8.65177 17.6486C9.12023 18.1171 9.87977 18.1171 10.3482 17.6486L11.7192 16.2777C11.9442 16.0527 12.2493 15.9263 12.5674 15.9263H14.7268C15.3893 15.9263 15.9263 15.3893 15.9263 14.7268V12.5674C15.9263 12.2493 16.0527 11.9442 16.2777 11.7192L17.6486 10.3482C18.1171 9.87977 18.1171 9.12023 17.6486 8.65177L16.2777 7.28081C16.0527 7.05585 15.9263 6.75073 15.9263 6.43258V4.27324C15.9263 3.61073 15.3893 3.07365 14.7268 3.07365H12.5674C12.2493 3.07365 11.9442 2.94727 11.7192 2.7223L10.3482 1.35135C9.87977 0.882883 9.12023 0.882883 8.65177 1.35135Z"
-                stroke="#E92D2D" />
-            </svg>
-          </span>
-          <h1>Динс Velvet Yellow</h1>
-          <h2>Диваны</h2>
-          <h3>28 490₽ <span>37 990₽</span></h3>
-          <div class="name_size-btn">
+            <div class="name_size-btn">
+              <img src="../img/jpg/catalog/image_2.png" alt="Валенсия Beige" />
+              <button type="submit" class="like">
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.29442 8.54442L9.75 16L17.2056 8.54442C18.0344 7.71562 18.5 6.59152 18.5 5.41942C18.5 2.97864 16.5214 1 14.0806 1C12.9085 1 11.7844 1.46562 10.9556 2.29442L9.75 3.5L8.54442 2.29442C7.71562 1.46562 6.59152 1 5.41942 1C2.97864 1 1 2.97864 1 5.41942C1 6.59152 1.46561 7.71561 2.29442 8.54442Z"
+                    stroke="black" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <span class="action">-25%
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.46429 7.07143H7.67857M11.3214 11.9286H12.5357M12.5357 6.46429L6.46429 12.5357M8.65177 1.35135L7.28081 2.7223C7.05585 2.94727 6.75073 3.07365 6.43258 3.07365H4.27324C3.61073 3.07365 3.07365 3.61073 3.07365 4.27324V6.43258C3.07365 6.75073 2.94727 7.05585 2.7223 7.28081L1.35135 8.65177C0.882883 9.12023 0.882883 9.87977 1.35135 10.3482L2.7223 11.7192C2.94727 11.9442 3.07365 12.2493 3.07365 12.5674V14.7268C3.07365 15.3893 3.61073 15.9263 4.27324 15.9263H6.43258C6.75073 15.9263 7.05585 16.0527 7.28081 16.2777L8.65177 17.6486C9.12023 18.1171 9.87977 18.1171 10.3482 17.6486L11.7192 16.2777C11.9442 16.0527 12.2493 15.9263 12.5674 15.9263H14.7268C15.3893 15.9263 15.9263 15.3893 15.9263 14.7268V12.5674C15.9263 12.2493 16.0527 11.9442 16.2777 11.7192L17.6486 10.3482C18.1171 9.87977 18.1171 9.12023 17.6486 8.65177L16.2777 7.28081C16.0527 7.05585 15.9263 6.75073 15.9263 6.43258V4.27324C15.9263 3.61073 15.3893 3.07365 14.7268 3.07365H12.5674C12.2493 3.07365 11.9442 2.94727 11.7192 2.7223L10.3482 1.35135C9.87977 0.882883 9.12023 0.882883 8.65177 1.35135Z"
+                    stroke="#E92D2D" />
+                </svg>
+              </span>
+              <h1>Толикс-2 White Gloss</h1>
+              <h2>Барные стулья</h2>
+              <h3>4 690₽ <span>37 990₽</span></h3>
+              <h4>Размеры</h4>
+              <span class="name_size">ШИРИНА</span>
+              <span class="name_size">ГЛУБИНА</span>
+              <span class="name_size">ВЫСОТА</span>
+              <div><span>x</span> <span>x</span></div>
+              <span class="size">43 СМ</span> <span class="size">43 СМ</span>
+              <span class="size">77 СМ</span>
+              <button type="button">Добавить в корзину</button>
+            </div>
+          </li>
+          <li>
             <img src="../img/jpg/catalog/image_3.png" alt="Валенсия Beige" />
             <button type="submit" class="like">
               <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -588,36 +610,36 @@
             <h1>Динс Velvet Yellow</h1>
             <h2>Диваны</h2>
             <h3>28 490₽ <span>37 990₽</span></h3>
-            <h4>Размеры</h4>
-            <span class="name_size">ШИРИНА</span>
-            <span class="name_size">ГЛУБИНА</span>
-            <span class="name_size">ВЫСОТА</span>
-            <div><span>x</span> <span>x</span></div>
-            <span class="size">43 СМ</span> <span class="size">43 СМ</span>
-            <span class="size">77 СМ</span>
-            <button type="button">Добавить в корзину</button>
-          </div>
-        </li>
-        <li>
-          <img src="../img/jpg/catalog/image_4.png" alt="Валенсия Beige" />
-          <button type="submit" class="like">
-            <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M2.29442 8.54442L9.75 16L17.2056 8.54442C18.0344 7.71562 18.5 6.59152 18.5 5.41942C18.5 2.97864 16.5214 1 14.0806 1C12.9085 1 11.7844 1.46562 10.9556 2.29442L9.75 3.5L8.54442 2.29442C7.71562 1.46562 6.59152 1 5.41942 1C2.97864 1 1 2.97864 1 5.41942C1 6.59152 1.46561 7.71561 2.29442 8.54442Z"
-                stroke="black" stroke-linejoin="round" />
-            </svg>
-          </button>
-          <span class="action">-25%
-            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M6.46429 7.07143H7.67857M11.3214 11.9286H12.5357M12.5357 6.46429L6.46429 12.5357M8.65177 1.35135L7.28081 2.7223C7.05585 2.94727 6.75073 3.07365 6.43258 3.07365H4.27324C3.61073 3.07365 3.07365 3.61073 3.07365 4.27324V6.43258C3.07365 6.75073 2.94727 7.05585 2.7223 7.28081L1.35135 8.65177C0.882883 9.12023 0.882883 9.87977 1.35135 10.3482L2.7223 11.7192C2.94727 11.9442 3.07365 12.2493 3.07365 12.5674V14.7268C3.07365 15.3893 3.61073 15.9263 4.27324 15.9263H6.43258C6.75073 15.9263 7.05585 16.0527 7.28081 16.2777L8.65177 17.6486C9.12023 18.1171 9.87977 18.1171 10.3482 17.6486L11.7192 16.2777C11.9442 16.0527 12.2493 15.9263 12.5674 15.9263H14.7268C15.3893 15.9263 15.9263 15.3893 15.9263 14.7268V12.5674C15.9263 12.2493 16.0527 11.9442 16.2777 11.7192L17.6486 10.3482C18.1171 9.87977 18.1171 9.12023 17.6486 8.65177L16.2777 7.28081C16.0527 7.05585 15.9263 6.75073 15.9263 6.43258V4.27324C15.9263 3.61073 15.3893 3.07365 14.7268 3.07365H12.5674C12.2493 3.07365 11.9442 2.94727 11.7192 2.7223L10.3482 1.35135C9.87977 0.882883 9.12023 0.882883 8.65177 1.35135Z"
-                stroke="#E92D2D" />
-            </svg>
-          </span>
-          <h1>Кускен Navy Blue</h1>
-          <h2>Диваны</h2>
-          <h3>2 300₽ <span>37 990₽</span></h3>
-          <div class="name_size-btn">
+            <div class="name_size-btn">
+              <img src="../img/jpg/catalog/image_3.png" alt="Валенсия Beige" />
+              <button type="submit" class="like">
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.29442 8.54442L9.75 16L17.2056 8.54442C18.0344 7.71562 18.5 6.59152 18.5 5.41942C18.5 2.97864 16.5214 1 14.0806 1C12.9085 1 11.7844 1.46562 10.9556 2.29442L9.75 3.5L8.54442 2.29442C7.71562 1.46562 6.59152 1 5.41942 1C2.97864 1 1 2.97864 1 5.41942C1 6.59152 1.46561 7.71561 2.29442 8.54442Z"
+                    stroke="black" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <span class="action">-25%
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.46429 7.07143H7.67857M11.3214 11.9286H12.5357M12.5357 6.46429L6.46429 12.5357M8.65177 1.35135L7.28081 2.7223C7.05585 2.94727 6.75073 3.07365 6.43258 3.07365H4.27324C3.61073 3.07365 3.07365 3.61073 3.07365 4.27324V6.43258C3.07365 6.75073 2.94727 7.05585 2.7223 7.28081L1.35135 8.65177C0.882883 9.12023 0.882883 9.87977 1.35135 10.3482L2.7223 11.7192C2.94727 11.9442 3.07365 12.2493 3.07365 12.5674V14.7268C3.07365 15.3893 3.61073 15.9263 4.27324 15.9263H6.43258C6.75073 15.9263 7.05585 16.0527 7.28081 16.2777L8.65177 17.6486C9.12023 18.1171 9.87977 18.1171 10.3482 17.6486L11.7192 16.2777C11.9442 16.0527 12.2493 15.9263 12.5674 15.9263H14.7268C15.3893 15.9263 15.9263 15.3893 15.9263 14.7268V12.5674C15.9263 12.2493 16.0527 11.9442 16.2777 11.7192L17.6486 10.3482C18.1171 9.87977 18.1171 9.12023 17.6486 8.65177L16.2777 7.28081C16.0527 7.05585 15.9263 6.75073 15.9263 6.43258V4.27324C15.9263 3.61073 15.3893 3.07365 14.7268 3.07365H12.5674C12.2493 3.07365 11.9442 2.94727 11.7192 2.7223L10.3482 1.35135C9.87977 0.882883 9.12023 0.882883 8.65177 1.35135Z"
+                    stroke="#E92D2D" />
+                </svg>
+              </span>
+              <h1>Динс Velvet Yellow</h1>
+              <h2>Диваны</h2>
+              <h3>28 490₽ <span>37 990₽</span></h3>
+              <h4>Размеры</h4>
+              <span class="name_size">ШИРИНА</span>
+              <span class="name_size">ГЛУБИНА</span>
+              <span class="name_size">ВЫСОТА</span>
+              <div><span>x</span> <span>x</span></div>
+              <span class="size">43 СМ</span> <span class="size">43 СМ</span>
+              <span class="size">77 СМ</span>
+              <button type="button">Добавить в корзину</button>
+            </div>
+          </li>
+          <li>
             <img src="../img/jpg/catalog/image_4.png" alt="Валенсия Beige" />
             <button type="submit" class="like">
               <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -636,18 +658,39 @@
             <h1>Кускен Navy Blue</h1>
             <h2>Диваны</h2>
             <h3>2 300₽ <span>37 990₽</span></h3>
-            <h4>Размеры</h4>
-            <span class="name_size">ШИРИНА</span>
-            <span class="name_size">ГЛУБИНА</span>
-            <span class="name_size">ВЫСОТА</span>
-            <div><span>x</span> <span>x</span></div>
-            <span class="size">43 СМ</span> <span class="size">43 СМ</span>
-            <span class="size">77 СМ</span>
-            <button type="button">Добавить в корзину</button>
-          </div>
-        </li>
-      </ul>
-    </div>
+            <div class="name_size-btn">
+              <img src="../img/jpg/catalog/image_4.png" alt="Валенсия Beige" />
+              <button type="submit" class="like">
+                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.29442 8.54442L9.75 16L17.2056 8.54442C18.0344 7.71562 18.5 6.59152 18.5 5.41942C18.5 2.97864 16.5214 1 14.0806 1C12.9085 1 11.7844 1.46562 10.9556 2.29442L9.75 3.5L8.54442 2.29442C7.71562 1.46562 6.59152 1 5.41942 1C2.97864 1 1 2.97864 1 5.41942C1 6.59152 1.46561 7.71561 2.29442 8.54442Z"
+                    stroke="black" stroke-linejoin="round" />
+                </svg>
+              </button>
+              <span class="action">-25%
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6.46429 7.07143H7.67857M11.3214 11.9286H12.5357M12.5357 6.46429L6.46429 12.5357M8.65177 1.35135L7.28081 2.7223C7.05585 2.94727 6.75073 3.07365 6.43258 3.07365H4.27324C3.61073 3.07365 3.07365 3.61073 3.07365 4.27324V6.43258C3.07365 6.75073 2.94727 7.05585 2.7223 7.28081L1.35135 8.65177C0.882883 9.12023 0.882883 9.87977 1.35135 10.3482L2.7223 11.7192C2.94727 11.9442 3.07365 12.2493 3.07365 12.5674V14.7268C3.07365 15.3893 3.61073 15.9263 4.27324 15.9263H6.43258C6.75073 15.9263 7.05585 16.0527 7.28081 16.2777L8.65177 17.6486C9.12023 18.1171 9.87977 18.1171 10.3482 17.6486L11.7192 16.2777C11.9442 16.0527 12.2493 15.9263 12.5674 15.9263H14.7268C15.3893 15.9263 15.9263 15.3893 15.9263 14.7268V12.5674C15.9263 12.2493 16.0527 11.9442 16.2777 11.7192L17.6486 10.3482C18.1171 9.87977 18.1171 9.12023 17.6486 8.65177L16.2777 7.28081C16.0527 7.05585 15.9263 6.75073 15.9263 6.43258V4.27324C15.9263 3.61073 15.3893 3.07365 14.7268 3.07365H12.5674C12.2493 3.07365 11.9442 2.94727 11.7192 2.7223L10.3482 1.35135C9.87977 0.882883 9.12023 0.882883 8.65177 1.35135Z"
+                    stroke="#E92D2D" />
+                </svg>
+              </span>
+              <h1>Кускен Navy Blue</h1>
+              <h2>Диваны</h2>
+              <h3>2 300₽ <span>37 990₽</span></h3>
+              <h4>Размеры</h4>
+              <span class="name_size">ШИРИНА</span>
+              <span class="name_size">ГЛУБИНА</span>
+              <span class="name_size">ВЫСОТА</span>
+              <div><span>x</span> <span>x</span></div>
+              <span class="size">43 СМ</span> <span class="size">43 СМ</span>
+              <span class="size">77 СМ</span>
+              <button type="button">Добавить в корзину</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+
 
     <!-- Футер-->
 
