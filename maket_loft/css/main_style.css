@@ -2043,9 +2043,7 @@ main.inner {
   position: relative;
 }
 
-.filter__head.filter__head_active {
-  display: block;
-}
+
 
 .filter__btn-close {
   position: absolute;
@@ -2068,6 +2066,7 @@ main.inner {
 
 
 .filter__btn {
+  display: none;
   max-width: 138px;
   padding: 13px 48px;
   font-family: 'Roboto';

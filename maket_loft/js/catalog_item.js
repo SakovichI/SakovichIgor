@@ -46,9 +46,7 @@ const filterBtnClose = document.querySelector('.filter__btn-close');
 const filterHead = document.querySelector('.filter__head');
 
 filterBtn.addEventListener('click', function () {
-  filter.classList.toggle('filter_active');
-  filterHead.classList.add('filter__head_active');
-
+  filter.classList.add('filter_active');
 })
 
 filterBtnClose.addEventListener('click', function () {

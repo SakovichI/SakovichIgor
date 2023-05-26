@@ -225,10 +225,10 @@
 
   .search {
     position: relative;
-    margin: 20px 162px 0px 220px;
+    margin: 20px 302px 0px 223px;
   }
 
-  .search_item a {
+  .search_item a:nth-child(1) {
     display: none;
   }
 
@@ -332,6 +332,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 
   .catalog li {
@@ -386,6 +387,40 @@
     flex-direction: column;
   }
 
+  main.inner {
+    display: grid;
+    grid-template-areas:
+      "filter sort"
+      "catalog catalog"
+      "catalog catalog"
+      "catalog catalog";
+  }
+
+  .filter {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    bottom: 0;
+    right: 0;
+    transition: left 0.5s ease-in;
+    background-color: #ffffff;
+    z-index: 10;
+  }
+
+  .filter__head {
+    display: block;
+  }
+
+  .filter.filter_active {
+    left: 0;
+  }
+
+  .filter__btn {
+    display: block;
+  }
+
   .footer {
     margin-top: 50px;
   }
@@ -402,6 +437,10 @@
 
   .catalog {
     justify-content: space-around;
+  }
+
+  .catalog-mobile {
+    justify-content: flex-start;
   }
 }
 
@@ -422,8 +461,12 @@
     display: none;
   }
 
+  .search_item {
+    float: none;
+  }
+
   .search {
-    margin: 20px 100px 0px 217px;
+    margin: 20px 20px 0px 20px;
   }
 
   .catalog {
@@ -640,8 +683,16 @@
     margin: 0px 0px;
   }
 
-  .filter {
-    display: none;
+}
+
+@media all and (max-width: 370px) {
+  .search_item a {
+    margin-left: 12px;
+  }
+
+  .search_item a svg {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -681,7 +732,7 @@
   }
 
   .search_item svg {
-    margin: 0px 0px 0px 15px;
+    margin: 0px 0px 0px 10px;
   }
 
   .search {
@@ -807,7 +858,7 @@
   }
 
   .catalog li {
-    width: 138px;
+    width: 137px;
   }
 
   .name_size-btn {
@@ -1058,6 +1109,8 @@
   .catalog {
     justify-content: flex-start;
     padding-bottom: 50px;
+    overflow-y: visible;
+    overflow-x: scroll;
   }
 
   .basket__item {
@@ -1145,25 +1198,6 @@
 
 
   /* Фильтр */
-  filter {
-    display: none;
-    transform: scale(0);
-  }
-
-  .filter.filter_active {
-    width: 100%;
-    height: 100vh;
-    display: block;
-    transform: scale(1);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 10;
-    background-color: #ffffff;
-    transition: 2s;
-  }
 
   .select__wrap {
     width: 100%;
