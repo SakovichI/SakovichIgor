@@ -377,7 +377,7 @@ ul {
 .menu_nav>li svg:not(:last-child) {
   position: relative;
   top: 0px;
-  left: -5px;
+  left: 0px;
 }
 
 .menu_nav>li:not(:nth-child(7), :nth-child(8)):hover {
@@ -2026,6 +2026,34 @@ main.inner {
   color: #414141;
 }
 
+.filter_active {
+  display: block;
+}
+
+.filter__head {
+  display: none;
+  margin: 23px 0px 64px 0px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #414141;
+  position: relative;
+}
+
+.filter__head.filter__head_active {
+  display: block;
+}
+
+.filter__btn-close {
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  border: none;
+}
+
 
 .filter {
   grid-area: filter;
@@ -2038,10 +2066,24 @@ main.inner {
   width: fit-content;
 }
 
+
+.filter__btn {
+  max-width: 138px;
+  padding: 13px 48px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  background: #F9F9F9;
+  border: none;
+}
+
 .filter__select {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  margin-bottom: 28px;
 }
 
 .filter__title {
@@ -2195,7 +2237,6 @@ main.inner {
 
 .filter__price-range {
   width: 223px;
-  text-align: center;
 }
 
 .price-range {

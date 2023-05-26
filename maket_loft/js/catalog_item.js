@@ -37,3 +37,22 @@ const sortMenu = document.querySelector(".sort__menu")
 sortBtn.addEventListener('click', function () {
   sortMenu.classList.toggle('sort__menu_active')
 });
+
+/* Фильтр мобилка */
+
+const filterBtn = document.querySelector(".filter__btn");
+const filter = document.querySelector(".filter");
+const filterBtnClose = document.querySelector('.filter__btn-close');
+const filterHead = document.querySelector('.filter__head');
+
+filterBtn.addEventListener('click', function () {
+  filter.classList.toggle('filter_active');
+  filterHead.classList.add('filter__head_active');
+
+})
+
+filterBtnClose.addEventListener('click', function () {
+  filter.classList.remove('filter_active')
+  filterHead.classList.remove('filter__head_active');
+
+})
