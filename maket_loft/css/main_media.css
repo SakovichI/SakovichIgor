@@ -1,7 +1,9 @@
-/* @media all and (max-width: 1060px) {
-  .menu_nav li {
-    padding: 0px 6px 0px 30px;
-  } */
+@media all and (max-width: 1100px) {
+  .wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 @media all and (max-width: 990px) {
   .head__search input[placeholder] {
@@ -424,12 +426,25 @@
   .footer {
     margin-top: 50px;
   }
+
+  /* корзина */
+
+  .item__color {
+    padding-right: 15px;
+  }
+
+  .item__amount {
+    padding-right: 15px;
+  }
+
+
 }
 
 @media all and (max-width: 680px) {
   .search_item span {
     display: none;
   }
+
 
   .search {
     margin: 20px 180px 0px 217px;
@@ -442,6 +457,51 @@
   .catalog-mobile {
     justify-content: flex-start;
   }
+
+  /* Корзина */
+  .basket__item {
+    display: grid;
+    grid-template-columns: min-content min-content max-content 1fr min-content;
+    grid-template-rows: repeat(4, min-content);
+    grid-auto-rows: unset;
+    grid-template-areas:
+      "img name name name btn"
+      "img amount price action action"
+      "color color color color color"
+      "size size size size size";
+  }
+
+  .basket__item-price {
+    align-self: start;
+  }
+
+  .basket__item-action {
+    align-self: start;
+    justify-self: start;
+  }
+
+  .basket__item-img {
+    margin-left: 15px;
+  }
+
+  .item__amount {
+    line-height: 0.5;
+  }
+
+  .item__color {
+    padding: 8px 0px 10px 15px;
+  }
+
+  .item__size {
+    padding: 0px 0px 15px 15px;
+  }
+
+  .basket__item-btn {
+    background-color: #ffffff;
+  }
+
+
+
 }
 
 @media all and (max-width: 590px) {
@@ -682,6 +742,8 @@
   .head__search-menu .hamburger_menu {
     margin: 0px 0px;
   }
+
+
 
 }
 
@@ -1113,12 +1175,6 @@
     overflow-x: scroll;
   }
 
-  .basket__item {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, min-content);
-  }
-
   .basket__item-img {
     width: 67px;
     height: 50px;
@@ -1132,8 +1188,16 @@
   }
 
   .basket__item-price {
+    align-self: center;
+    padding-right: 10px;
     font-size: 12px;
     line-height: 14px;
+  }
+
+  .item__amount {
+    justify-self: center;
+    width: min-content;
+    padding-right: 10px;
   }
 
   .item__value {
@@ -1159,9 +1223,14 @@
     display: none;
   }
 
+  .basket__item-action {
+    align-self: center;
+  }
+
   .basket__item-btn {
     width: min-content;
     background-color: #ffffff;
+    margin: 18px 10px;
   }
 
   .item-btn__icon {

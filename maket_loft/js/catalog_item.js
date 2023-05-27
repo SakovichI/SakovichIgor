@@ -15,22 +15,6 @@ $("#amount2").val($("#slider-range ").slider("values", 1) + " ₽");
 
 
 
-var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 10,
-  slidesPerView: 5,
-  freeMode: true,
-  watchSlidesProgress: true,
-});
-var swiper2 = new Swiper(".mySwiper2", {
-  spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  thumbs: {
-    swiper: swiper,
-  },
-});
 
 const sortBtn = document.querySelector(".sort__btn");
 const sortMenu = document.querySelector(".sort__menu")
