@@ -607,6 +607,10 @@ div>h2 {
   position: relative;
 }
 
+.catalog li a {
+  text-decoration: none;
+}
+
 .catalog img {
   margin: 74px 32px 0px 31px;
   width: 200px;
