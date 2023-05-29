@@ -1,0 +1,24 @@
+/* шрифты */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+
+/* Переменные */
+
+@mixin main-font {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    color: #000;
+}
+
+@mixin main-btn {
+    position: relative;
+    padding: 16.5px 78px 17.5px 30px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    @include main-font;
+    font-weight: 700;
+    outline: none;
+    border: none;
+
+}
