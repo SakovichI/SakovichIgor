@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const updateStorage = () => {
     let html = cardWrap.innerHTML;
     html = html.trim();
-    console.log(html.length);
     if (html.length) {
       localStorage.setItem("products", html);
       basketIcon.classList.add("head__menu-item_active")
+
     } else {
       basketIcon.classList.remove("head__menu-item_active");
       localStorage.removeItem("products", html);
@@ -39,14 +39,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const initialState = () => {
     if (localStorage.getItem("products") !== null) {
       cardWrap.innerHTML = localStorage.getItem("products");
-      console.log(localStorage.getItem("products"))
-      cardWrap.innerHTML = localStorage.getItem("products");
       basketIcon.classList.add("head__menu-item_active");
     } else {
       basketIcon.classList.remove("head__menu-item_active");
     }
   };
   initialState();
+  console.log(priceprd)
 
   /* суммирование товаров */
 
@@ -66,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("click", function (event) {
     if (event.target.hasAttribute("data-btn")) {
       const card = event.target.closest(".name_size-btn");
-      console.log(card);
+      
       const product = {
         id: card.dataset.id,
         imgSrc: card.querySelector(".product__img").getAttribute("src"),
