@@ -445,8 +445,8 @@
             <h1>Валенсия Beige</h1>
             <h2>Барные стулья</h2>
             <h3>2 300₽ <span>37 990₽</span></h3>
-            <div class="name_size-btn">
-              <img src="../img/jpg/catalog/image_2.jpg" alt="Валенсия Beige" />
+            <div class="name_size-btn" data-id="01">
+              <img class="product__img" src="../img/jpg/catalog/image_2.jpg" alt="Валенсия Beige" />
               <button type="submit" class="like">
                 <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -471,7 +471,7 @@
               <div><span>x</span> <span>x</span></div>
               <span class="size">43 СМ</span> <span class="size">43 СМ</span>
               <span class="size">77 СМ</span>
-              <button type="button">Добавить в корзину</button>
+              <button type="button" data-btn="add-curt">Добавить в корзину</button>
             </div>
           </li>
           <li>
@@ -493,8 +493,8 @@
             <h1>Толикс-2 White Gloss</h1>
             <h2>Барные стулья</h2>
             <h3>4 690₽ <span>37 990₽</span></h3>
-            <div class="name_size-btn">
-              <img src="../img/jpg/catalog/image_2.png" alt="Валенсия Beige" />
+            <div class="name_size-btn" data-id="02">
+              <img class="product__img" src="../img/jpg/catalog/image_2.png" alt="Валенсия Beige" />
               <button type="submit" class="like">
                 <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -519,11 +519,11 @@
               <div><span>x</span> <span>x</span></div>
               <span class="size">43 СМ</span> <span class="size">43 СМ</span>
               <span class="size">77 СМ</span>
-              <button type="button">Добавить в корзину</button>
+              <button type="button" data-btn="add-curt">Добавить в корзину</button>
             </div>
           </li>
           <li>
-            <img src="../img/jpg/catalog/image_3.png" alt="Валенсия Beige" />
+            <img class="product__img" src="../img/jpg/catalog/image_3.png" alt="Валенсия Beige" />
             <button type="submit" class="like">
               <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -540,9 +540,9 @@
             </span>
             <h1>Динс Velvet Yellow</h1>
             <h2>Диваны</h2>
-            <h3>28490 ₽ <span>37 990₽</span></h3>
-
-            <div class="name_size-btn" data-id="01"><a href="card_item.html">
+            <h3>28 490 ₽ <span>37 990₽</span></h3>
+            <div class="name_size-btn" data-id="03">
+              <a href="card_item.html">
                 <img class="product__img" src="../img/jpg/catalog/image_3.png" alt="Валенсия Beige" />
                 <button type="submit" class="like">
                   <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -558,10 +558,10 @@
                       stroke="#E92D2D" />
                   </svg>
                 </span>
-
+    
                 <h1>Динс Velvet Yellow</h1>
                 <h2>Диваны</h2>
-                <h3>28490 ₽ <span>37 990₽</span></h3>
+                <h3>28 490 ₽ <span>37 990₽</span></h3>
               </a>
               <h4>Размеры</h4>
               <span class="name_size">ШИРИНА</span>
@@ -1824,10 +1824,10 @@
       </div>
     </div>
   </div>
+  <script src="../js/curt.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="../js/curt.js"></script>
 </body>
 
 </html>

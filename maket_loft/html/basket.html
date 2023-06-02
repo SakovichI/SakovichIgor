@@ -152,7 +152,7 @@
             stroke="black" stroke-linejoin="round" />
         </svg>
       </a>
-      <a href="basket.html"><svg width="17" height="20" viewBox="0 0 17 20" fill="none"
+      <a data-id="basket" class="" href="basket.html"><svg width="17" height="20" viewBox="0 0 17 20" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
             d="M4.70653 5.5V4.85714C4.70653 2.7269 6.43343 1 8.56367 1C10.6939 1 12.4208 2.7269 12.4208 4.85714V5.5M2.00802 8.5723L1.00802 17.5723C0.923392 18.3339 1.51957 19 2.28587 19H14.8415C15.6078 19 16.2039 18.3339 16.1193 17.5723L15.1193 8.5723C15.047 7.92117 14.4966 7.42857 13.8415 7.42857H3.28587C2.63073 7.42857 2.08036 7.92117 2.00802 8.5723Z"
@@ -389,184 +389,10 @@
     <h2 class="basket__title">Ваша корзина</h2>
     <p class="basket__subtitle">4 предмета</p>
     <div class="basket__items">
-      <div class="basket__item">
-        <img class="basket__item-img" src="../img/jpg/catalog/image10.png" alt="Кускен Navy Blue" />
-
-        <p class="basket__item-name">Кускен Navy Blue</p>
-        <p class="basket__item-action">
-          <svg class="item-action__icon" width="19" height="19" viewBox="0 0 19 19" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M6.46429 7.07143H7.67857M11.3214 11.9286H12.5357M12.5357 6.46429L6.46429 12.5357M8.65177 1.35135L7.28081 2.7223C7.05585 2.94727 6.75073 3.07365 6.43258 3.07365H4.27324C3.61073 3.07365 3.07365 3.61073 3.07365 4.27324V6.43258C3.07365 6.75073 2.94727 7.05585 2.7223 7.28081L1.35135 8.65177C0.882883 9.12023 0.882883 9.87977 1.35135 10.3482L2.7223 11.7192C2.94727 11.9442 3.07365 12.2493 3.07365 12.5674V14.7268C3.07365 15.3893 3.61073 15.9263 4.27324 15.9263H6.43258C6.75073 15.9263 7.05585 16.0527 7.28081 16.2777L8.65177 17.6486C9.12023 18.1171 9.87977 18.1171 10.3482 17.6486L11.7192 16.2777C11.9442 16.0527 12.2493 15.9263 12.5674 15.9263H14.7268C15.3893 15.9263 15.9263 15.3893 15.9263 14.7268V12.5674C15.9263 12.2493 16.0527 11.9442 16.2777 11.7192L17.6486 10.3482C18.1171 9.87977 18.1171 9.12023 17.6486 8.65177L16.2777 7.28081C16.0527 7.05585 15.9263 6.75073 15.9263 6.43258V4.27324C15.9263 3.61073 15.3893 3.07365 14.7268 3.07365H12.5674C12.2493 3.07365 11.9442 2.94727 11.7192 2.7223L10.3482 1.35135C9.87977 0.882883 9.12023 0.882883 8.65177 1.35135Z"
-              stroke="#E92D2D" />
-          </svg>
-          <span class="item-action__value">-25%</span>
-          <span class="item-action__old-price">37 990 ₽</span>
-        </p>
-        <p class="basket__item-price">16 990 ₽</p>
-
-        <div class="item__color">
-          <span class="item__title">Цвет:</span>
-          <span class="item__value">Темно-синий</span>
-          <div class="item__color-visual">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="14" height="14" fill="#353E4D" />
-            </svg>
-          </div>
-        </div>
-        <div class="item__amount">
-          <span class="item__title">Количество:</span>
-          <span class="item__value amount-value">1</span>
-        </div>
-        <div class="item__size">
-          <span class="item__title">Размер(Ш×Д×В):</span>
-          <span class="item__value">218 СМ × 95 СМ × 90 СМ</span>
-        </div>
-
-
-        <button class="basket__item-btn" data-btn-close="delete">
-          <svg class="item-btn__icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M3.84772 5.70711C4.23824 5.31658 4.23824 4.68342 3.84772 4.29289L1.22259 1.66776C1.09966 1.54483 1.09966 1.34552 1.22259 1.22259C1.34552 1.09966 1.54483 1.09966 1.66776 1.22259L4.29289 3.84772C4.68342 4.23824 5.31658 4.23824 5.70711 3.84772L8.33224 1.22259C8.45517 1.09966 8.65448 1.09966 8.77741 1.22259C8.90034 1.34552 8.90034 1.54483 8.77741 1.66776L6.15228 4.29289C5.76175 4.68342 5.76175 5.31658 6.15228 5.70711L8.77741 8.33224C8.90034 8.45517 8.90034 8.65448 8.77741 8.77741C8.65448 8.90034 8.45517 8.90034 8.33224 8.77741L5.70711 6.15228C5.31658 5.76175 4.68342 5.76175 4.29289 6.15228L1.66776 8.77741C1.54483 8.90034 1.34552 8.90034 1.22259 8.77741C1.09966 8.65448 1.09966 8.45517 1.22259 8.33224L3.84772 5.70711Z"
-              fill="#C9C9C9" stroke="#C9C9C9" />
-          </svg>
-        </button>
-      </div>
-      <div class="basket__item">
-        <img class="basket__item-img" src="../img/jpg/catalog/image10.png" alt="Кускен Navy Blue" />
-
-        <p class="basket__item-name">Кускен Navy Blue</p>
-        <p class="basket__item-action">
-          <svg class="item-action__icon" width="19" height="19" viewBox="0 0 19 19" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M6.46429 7.07143H7.67857M11.3214 11.9286H12.5357M12.5357 6.46429L6.46429 12.5357M8.65177 1.35135L7.28081 2.7223C7.05585 2.94727 6.75073 3.07365 6.43258 3.07365H4.27324C3.61073 3.07365 3.07365 3.61073 3.07365 4.27324V6.43258C3.07365 6.75073 2.94727 7.05585 2.7223 7.28081L1.35135 8.65177C0.882883 9.12023 0.882883 9.87977 1.35135 10.3482L2.7223 11.7192C2.94727 11.9442 3.07365 12.2493 3.07365 12.5674V14.7268C3.07365 15.3893 3.61073 15.9263 4.27324 15.9263H6.43258C6.75073 15.9263 7.05585 16.0527 7.28081 16.2777L8.65177 17.6486C9.12023 18.1171 9.87977 18.1171 10.3482 17.6486L11.7192 16.2777C11.9442 16.0527 12.2493 15.9263 12.5674 15.9263H14.7268C15.3893 15.9263 15.9263 15.3893 15.9263 14.7268V12.5674C15.9263 12.2493 16.0527 11.9442 16.2777 11.7192L17.6486 10.3482C18.1171 9.87977 18.1171 9.12023 17.6486 8.65177L16.2777 7.28081C16.0527 7.05585 15.9263 6.75073 15.9263 6.43258V4.27324C15.9263 3.61073 15.3893 3.07365 14.7268 3.07365H12.5674C12.2493 3.07365 11.9442 2.94727 11.7192 2.7223L10.3482 1.35135C9.87977 0.882883 9.12023 0.882883 8.65177 1.35135Z"
-              stroke="#E92D2D" />
-          </svg>
-          <span class="item-action__value">-25%</span>
-          <span class="item-action__old-price">37 990₽</span>
-        </p>
-        <p class="basket__item-price">16 990₽</p>
-
-        <div class="item__color">
-          <span class="item__title">Цвет:</span>
-          <span class="item__value">Темно-синий</span>
-          <div class="item__color-visual">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="14" height="14" fill="#353E4D" />
-            </svg>
-          </div>
-        </div>
-        <div class="item__amount">
-          <span class="item__title">Количество:</span>
-          <span class="item__value amount-value">1</span>
-        </div>
-        <div class="item__size">
-          <span class="item__title">Размер(Ш×Д×В):</span>
-          <span class="item__value">218 СМ × 95 СМ × 90 СМ</span>
-        </div>
-
-
-        <button class="basket__item-btn" data-btn-close="delete">
-          <svg class="item-btn__icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M3.84772 5.70711C4.23824 5.31658 4.23824 4.68342 3.84772 4.29289L1.22259 1.66776C1.09966 1.54483 1.09966 1.34552 1.22259 1.22259C1.34552 1.09966 1.54483 1.09966 1.66776 1.22259L4.29289 3.84772C4.68342 4.23824 5.31658 4.23824 5.70711 3.84772L8.33224 1.22259C8.45517 1.09966 8.65448 1.09966 8.77741 1.22259C8.90034 1.34552 8.90034 1.54483 8.77741 1.66776L6.15228 4.29289C5.76175 4.68342 5.76175 5.31658 6.15228 5.70711L8.77741 8.33224C8.90034 8.45517 8.90034 8.65448 8.77741 8.77741C8.65448 8.90034 8.45517 8.90034 8.33224 8.77741L5.70711 6.15228C5.31658 5.76175 4.68342 5.76175 4.29289 6.15228L1.66776 8.77741C1.54483 8.90034 1.34552 8.90034 1.22259 8.77741C1.09966 8.65448 1.09966 8.45517 1.22259 8.33224L3.84772 5.70711Z"
-              fill="#C9C9C9" stroke="#C9C9C9" />
-          </svg>
-        </button>
-      </div>
-      <div class="basket__item">
-        <img class="basket__item-img" src="../img/jpg/catalog/image10.png" alt="Кускен Navy Blue" />
-
-        <p class="basket__item-name">Кускен Navy Blue</p>
-        <p class="basket__item-action action-active">
-          <svg class="item-action__icon" width="19" height="19" viewBox="0 0 19 19" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M6.46429 7.07143H7.67857M11.3214 11.9286H12.5357M12.5357 6.46429L6.46429 12.5357M8.65177 1.35135L7.28081 2.7223C7.05585 2.94727 6.75073 3.07365 6.43258 3.07365H4.27324C3.61073 3.07365 3.07365 3.61073 3.07365 4.27324V6.43258C3.07365 6.75073 2.94727 7.05585 2.7223 7.28081L1.35135 8.65177C0.882883 9.12023 0.882883 9.87977 1.35135 10.3482L2.7223 11.7192C2.94727 11.9442 3.07365 12.2493 3.07365 12.5674V14.7268C3.07365 15.3893 3.61073 15.9263 4.27324 15.9263H6.43258C6.75073 15.9263 7.05585 16.0527 7.28081 16.2777L8.65177 17.6486C9.12023 18.1171 9.87977 18.1171 10.3482 17.6486L11.7192 16.2777C11.9442 16.0527 12.2493 15.9263 12.5674 15.9263H14.7268C15.3893 15.9263 15.9263 15.3893 15.9263 14.7268V12.5674C15.9263 12.2493 16.0527 11.9442 16.2777 11.7192L17.6486 10.3482C18.1171 9.87977 18.1171 9.12023 17.6486 8.65177L16.2777 7.28081C16.0527 7.05585 15.9263 6.75073 15.9263 6.43258V4.27324C15.9263 3.61073 15.3893 3.07365 14.7268 3.07365H12.5674C12.2493 3.07365 11.9442 2.94727 11.7192 2.7223L10.3482 1.35135C9.87977 0.882883 9.12023 0.882883 8.65177 1.35135Z"
-              stroke="#E92D2D" />
-          </svg>
-          <span class="item-action__value">-25%</span>
-          <span class="item-action__old-price">37 990₽</span>
-        </p>
-        <p class="basket__item-price">16 990₽</p>
-
-        <div class="item__color">
-          <span class="item__title">Цвет:</span>
-          <span class="item__value">Темно-синий</span>
-          <div class="item__color-visual">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="14" height="14" fill="#353E4D" />
-            </svg>
-          </div>
-        </div>
-        <div class="item__amount">
-          <span class="item__title">Количество:</span>
-          <span class="item__value amount-value">1</span>
-        </div>
-        <div class="item__size">
-          <span class="item__title">Размер(Ш×Д×В):</span>
-          <span class="item__value">218 СМ × 95 СМ × 90 СМ</span>
-        </div>
-
-
-        <button class="basket__item-btn" data-btn-close="delete">
-          <svg class="item-btn__icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M3.84772 5.70711C4.23824 5.31658 4.23824 4.68342 3.84772 4.29289L1.22259 1.66776C1.09966 1.54483 1.09966 1.34552 1.22259 1.22259C1.34552 1.09966 1.54483 1.09966 1.66776 1.22259L4.29289 3.84772C4.68342 4.23824 5.31658 4.23824 5.70711 3.84772L8.33224 1.22259C8.45517 1.09966 8.65448 1.09966 8.77741 1.22259C8.90034 1.34552 8.90034 1.54483 8.77741 1.66776L6.15228 4.29289C5.76175 4.68342 5.76175 5.31658 6.15228 5.70711L8.77741 8.33224C8.90034 8.45517 8.90034 8.65448 8.77741 8.77741C8.65448 8.90034 8.45517 8.90034 8.33224 8.77741L5.70711 6.15228C5.31658 5.76175 4.68342 5.76175 4.29289 6.15228L1.66776 8.77741C1.54483 8.90034 1.34552 8.90034 1.22259 8.77741C1.09966 8.65448 1.09966 8.45517 1.22259 8.33224L3.84772 5.70711Z"
-              fill="#C9C9C9" stroke="#C9C9C9" />
-          </svg>
-        </button>
-      </div>
-      <div class="basket__item">
-        <img class="basket__item-img" src="../img/jpg/catalog/image10.png" alt="Кускен Navy Blue" />
-        <p class="basket__item-name">Кускен Navy Blue</p>
-        <p class="basket__item-action action-active">
-          <svg class="item-action__icon" width="19" height="19" viewBox="0 0 19 19" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M6.46429 7.07143H7.67857M11.3214 11.9286H12.5357M12.5357 6.46429L6.46429 12.5357M8.65177 1.35135L7.28081 2.7223C7.05585 2.94727 6.75073 3.07365 6.43258 3.07365H4.27324C3.61073 3.07365 3.07365 3.61073 3.07365 4.27324V6.43258C3.07365 6.75073 2.94727 7.05585 2.7223 7.28081L1.35135 8.65177C0.882883 9.12023 0.882883 9.87977 1.35135 10.3482L2.7223 11.7192C2.94727 11.9442 3.07365 12.2493 3.07365 12.5674V14.7268C3.07365 15.3893 3.61073 15.9263 4.27324 15.9263H6.43258C6.75073 15.9263 7.05585 16.0527 7.28081 16.2777L8.65177 17.6486C9.12023 18.1171 9.87977 18.1171 10.3482 17.6486L11.7192 16.2777C11.9442 16.0527 12.2493 15.9263 12.5674 15.9263H14.7268C15.3893 15.9263 15.9263 15.3893 15.9263 14.7268V12.5674C15.9263 12.2493 16.0527 11.9442 16.2777 11.7192L17.6486 10.3482C18.1171 9.87977 18.1171 9.12023 17.6486 8.65177L16.2777 7.28081C16.0527 7.05585 15.9263 6.75073 15.9263 6.43258V4.27324C15.9263 3.61073 15.3893 3.07365 14.7268 3.07365H12.5674C12.2493 3.07365 11.9442 2.94727 11.7192 2.7223L10.3482 1.35135C9.87977 0.882883 9.12023 0.882883 8.65177 1.35135Z"
-              stroke="#E92D2D" />
-          </svg>
-          <span class="item-action__value">-25%</span>
-          <span class="item-action__old-price">37 990₽</span>
-        </p>
-        <p class="basket__item-price">16 990₽</p>
-
-        <div class="item__color">
-          <span class="item__title">Цвет:</span>
-          <span class="item__value">Темно-синий</span>
-          <div class="item__color-visual">
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="14" height="14" fill="#353E4D" />
-            </svg>
-          </div>
-        </div>
-        <div class="item__amount">
-          <span class="item__title">Количество:</span>
-          <span class="item__value amount-value">1</span>
-        </div>
-        <div class="item__size">
-          <span class="item__title">Размер(Ш×Д×В):</span>
-          <span class="item__value">218 СМ × 95 СМ × 90 СМ</span>
-        </div>
-
-
-        <button class="basket__item-btn" data-btn-close="delete">
-          <svg class="item-btn__icon" width="10" height="10" viewBox="0 0 10 10" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M3.84772 5.70711C4.23824 5.31658 4.23824 4.68342 3.84772 4.29289L1.22259 1.66776C1.09966 1.54483 1.09966 1.34552 1.22259 1.22259C1.34552 1.09966 1.54483 1.09966 1.66776 1.22259L4.29289 3.84772C4.68342 4.23824 5.31658 4.23824 5.70711 3.84772L8.33224 1.22259C8.45517 1.09966 8.65448 1.09966 8.77741 1.22259C8.90034 1.34552 8.90034 1.54483 8.77741 1.66776L6.15228 4.29289C5.76175 4.68342 5.76175 5.31658 6.15228 5.70711L8.77741 8.33224C8.90034 8.45517 8.90034 8.65448 8.77741 8.77741C8.65448 8.90034 8.45517 8.90034 8.33224 8.77741L5.70711 6.15228C5.31658 5.76175 4.68342 5.76175 4.29289 6.15228L1.66776 8.77741C1.54483 8.90034 1.34552 8.90034 1.22259 8.77741C1.09966 8.65448 1.09966 8.45517 1.22259 8.33224L3.84772 5.70711Z"
-              fill="#C9C9C9" stroke="#C9C9C9" />
-          </svg>
-        </button>
-      </div>
+      
     </div>
     <div class="design-wrap">
-      <p class="coast">69 960₽</p>
+      <p class="coast">0</p>
       <button class="design-btn">Оформить заказ</button>
     </div>
   </div>
@@ -574,9 +400,9 @@
 
   <!-- Каталог товаров -->
 
-  <div class="contain">
+  <div class="contain ">
     <h2>Вам может понравиться</h2>
-    <ul class="catalog clearfix catalog-mobile">
+    <ul class="catalog  clearfix catalog-mobile">
       <li>
         <img src="../img/jpg/catalog/image_2.jpg" alt="Валенсия Beige" />
         <button type="submit" class="like">
@@ -596,8 +422,8 @@
         <h1>Валенсия Beige</h1>
         <h2>Барные стулья</h2>
         <h3>2 300₽ <span>37 990₽</span></h3>
-        <div class="name_size-btn">
-          <img src="../img/jpg/catalog/image_2.jpg" alt="Валенсия Beige" />
+        <div class="name_size-btn" data-id="01">
+          <img class="product__img" src="../img/jpg/catalog/image_2.jpg" alt="Валенсия Beige" />
           <button type="submit" class="like">
             <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -622,7 +448,7 @@
           <div><span>x</span> <span>x</span></div>
           <span class="size">43 СМ</span> <span class="size">43 СМ</span>
           <span class="size">77 СМ</span>
-          <button type="button">Добавить в корзину</button>
+          <button type="button" data-btn="add-curt">Добавить в корзину</button>
         </div>
       </li>
       <li>
@@ -644,8 +470,8 @@
         <h1>Толикс-2 White Gloss</h1>
         <h2>Барные стулья</h2>
         <h3>4 690₽ <span>37 990₽</span></h3>
-        <div class="name_size-btn">
-          <img src="../img/jpg/catalog/image_2.png" alt="Валенсия Beige" />
+        <div class="name_size-btn" data-id="02">
+          <img class="product__img" src="../img/jpg/catalog/image_2.png" alt="Валенсия Beige" />
           <button type="submit" class="like">
             <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -670,11 +496,11 @@
           <div><span>x</span> <span>x</span></div>
           <span class="size">43 СМ</span> <span class="size">43 СМ</span>
           <span class="size">77 СМ</span>
-          <button type="button">Добавить в корзину</button>
+          <button type="button" data-btn="add-curt">Добавить в корзину</button>
         </div>
       </li>
       <li>
-        <img src="../img/jpg/catalog/image_3.png" alt="Валенсия Beige" />
+        <img class="product__img" src="../img/jpg/catalog/image_3.png" alt="Валенсия Beige" />
         <button type="submit" class="like">
           <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
@@ -691,8 +517,8 @@
         </span>
         <h1>Динс Velvet Yellow</h1>
         <h2>Диваны</h2>
-        <h3>28490 ₽ <span>37 990₽</span></h3>
-        <div class="name_size-btn" data-id="01">
+        <h3>28 490 ₽ <span>37 990₽</span></h3>
+        <div class="name_size-btn" data-id="03">
           <a href="card_item.html">
             <img class="product__img" src="../img/jpg/catalog/image_3.png" alt="Валенсия Beige" />
             <button type="submit" class="like">
@@ -712,7 +538,7 @@
 
             <h1>Динс Velvet Yellow</h1>
             <h2>Диваны</h2>
-            <h3>28 490₽ <span>37 990₽</span></h3>
+            <h3>28 490 ₽ <span>37 990₽</span></h3>
           </a>
           <h4>Размеры</h4>
           <span class="name_size">ШИРИНА</span>

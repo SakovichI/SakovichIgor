@@ -1,35 +1,92 @@
-const cardWrap = document.querySelector('.basket__items');
+document.addEventListener("DOMContentLoaded", function () {
+  const cardWrap = document.querySelector(".basket__items");
+  const basketIcon = document.querySelector('[data-id="basket"]');
+  let price = 0;
 
-window.addEventListener('click', function (event) {
+  /*рандомный Id  */
 
-  if (event.target.hasAttribute('data-btn')) {
+  const randomId = () => {
+    return (
+      Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15)
+    );
+  };
 
-    const card = event.target.closest('.name_size-btn');
+  /* Преобразователь строки в число без пробелов */
 
-    const product = {
-      id: card.dataset.id,
-      imgSrc: card.querySelector('.product__img').getAttribute('src'),
-      imgAlt: card.querySelector('.product__img').getAttribute('alt'),
-      title: card.querySelector('h1').innerText,
-      categori: card.querySelector('h2').innerText,
-      price: card.querySelector('h3').innerText,
-    };
+  const priceWithoutSpace = (str) => {
+    return str.replace(/\s/g, "");
+  };
 
+  /* Преобразовывает цену в строку с пробелами */
 
-    /* Проверка наличия товара в корзине */
-    const itemInCurt = cardWrap.querySelector(`[data-id="${product.id}"]`);
+  const normalPrice = (str) => {
+    return String(str).replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, "$1 ");
+  };
 
-    if (itemInCurt) {
-      const amount = cardWrap.querySelectorAll(`[data-id="${product.id}"]`);
-
-      amount.forEach(function (value) {
-        const itemValue = value.querySelector('.amount-value');
-        itemValue.innerText = ++itemValue.innerText;
-      });
-
+  /* локал сторадж */
+  const updateStorage = () => {
+    let html = cardWrap.innerHTML;
+    html = html.trim();
+    console.log(html.length);
+    if (html.length) {
+      localStorage.setItem("products", html);
+      basketIcon.classList.add("head__menu-item_active")
     } else {
+      basketIcon.classList.remove("head__menu-item_active");
+      localStorage.removeItem("products", html);
+    }
+  };
+  const initialState = () => {
+    if (localStorage.getItem("products") !== null) {
+      cardWrap.innerHTML = localStorage.getItem("products");
+      console.log(localStorage.getItem("products"))
+      cardWrap.innerHTML = localStorage.getItem("products");
+      basketIcon.classList.add("head__menu-item_active");
+    } else {
+      basketIcon.classList.remove("head__menu-item_active");
+    }
+  };
+  initialState();
 
-      const cardItemCurt = `<div class="basket__item" data-id="${product.id}">
+  /* суммирование товаров */
+
+  const plusFullPrice = (currentPrice) => {
+    return (price += currentPrice);
+  };
+  const minusFullPrice = (currentPrice) => {
+    return (price -= currentPrice);
+  };
+
+  const printFullPrice = () => {
+    fullPrice.innerText = `${normalPrice(price)}`;
+  };
+
+  /* иконка товаров */
+
+  window.addEventListener("click", function (event) {
+    if (event.target.hasAttribute("data-btn")) {
+      const card = event.target.closest(".name_size-btn");
+      console.log(card);
+      const product = {
+        id: card.dataset.id,
+        imgSrc: card.querySelector(".product__img").getAttribute("src"),
+        imgAlt: card.querySelector(".product__img").getAttribute("alt"),
+        title: card.querySelector("h1").innerText,
+        categori: card.querySelector("h2").innerText,
+        price: card.querySelector("h3").innerText,
+      };
+
+      /* Проверка наличия товара в корзине */
+      const itemInCurt = cardWrap.querySelector(`[data-id="${product.id}"]`);
+
+      if (itemInCurt) {
+        const amount = cardWrap.querySelectorAll(`[data-id="${product.id}"]`);
+        amount.forEach(function (value) {
+          const itemValue = value.querySelector(".amount-value");
+          itemValue.innerText = ++itemValue.innerText;
+        });
+      } else {
+        const cardItemCurt = `<div class="basket__item" data-id="${product.id}">
     <img class="basket__item-img" src="${product.imgSrc}" alt="${product.imgAlt}" />
             <p class="basket__item-name">${product.title}</p>
             <p class="basket__item-action">
@@ -73,17 +130,17 @@ window.addEventListener('click', function (event) {
               </svg>
             </button>
           </div>`;
-      cardWrap.insertAdjacentHTML("beforeend", cardItemCurt);
+        cardWrap.insertAdjacentHTML("beforeend", cardItemCurt);
+        updateStorage();
+      }
     }
 
-  }
+    /* Удаление товара */
+    if (event.target.hasAttribute("data-btn-close")) {
+      console.log(event.target.querySelector(".basket__item-btn"));
 
-  /* Удаление товара */
-  if (event.target.hasAttribute('data-btn-close')) {
-    console.log(event.target.querySelector('.basket__item-btn'))
-
-    event.target.closest('.basket__item').remove();
-
-  }
-
-})
+      event.target.closest(".basket__item").remove();
+      updateStorage();
+    }
+  });
+});

@@ -1,14 +1,31 @@
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    @include main-font
+  @include main-font;
 }
 
 .container {
-    max-width: 1650px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1650px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 115%;
+  letter-spacing: 0.02em;
+  color: #000000;
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    margin: 48px 0px 80px 0px;
+    width: 115px;
+    height: 10px;
+    background: #ffcb58;
+  }
 }
