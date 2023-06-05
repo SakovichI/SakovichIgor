@@ -1,6 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
   const cardWrap = document.querySelector(".basket__items");
   const basketIcon = document.querySelector('[data-id="basket"]');
+  const basketIn = document.location.toString();
+  console.log(basketIn)
+
+  function openBasket () {
+    if(basketIn == "http://127.0.0.1:5500/maket_loft/html/basket.html"){
+      basketIcon.classList.add('head__menu-item_focus');
+    } else {
+      basketIcon.classList.remove('head__menu-item_focus');
+    }
+    openBasket()
+    
+  }
   let price = 0;
 
   /*рандомный Id  */
@@ -45,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
   initialState();
-  console.log(priceprd)
+
 
   /* суммирование товаров */
 

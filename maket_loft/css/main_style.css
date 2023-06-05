@@ -839,7 +839,7 @@ div>h2 {
   position: relative;
 }
 
-.head__menu-item a:focus path {
+.head__menu-item a.head__menu-item_focus path{
   fill: #000000;
 }
 

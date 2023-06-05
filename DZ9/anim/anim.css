@@ -19,6 +19,6 @@
 .anim{
     width: 100px;
     height: 130px;
-    animation: Animation 1s steps(8) infinite;
+    animation: Animation 1s steps(7) infinite;
 
 }

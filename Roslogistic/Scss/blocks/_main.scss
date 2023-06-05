@@ -98,8 +98,8 @@
 /* бургер меню */
 .burger-menu {
   position: fixed;
-  top: 37px;
-  left: 36px;
+  left: 0;
+  top: 0;
   width: 100px;
   height: 100vh;
   z-index: 2;
@@ -110,6 +110,8 @@
   background-color: transparent;
   outline: none;
   border: none;
+  margin-top: 36px;
+  margin-left: 36px;
 }
 
 .header-bg-menu {
@@ -304,3 +306,241 @@
     border-left: 1px solid rgba(58, 58, 58, 0.15);
   }
 }
+
+/* block Info */
+
+.info {
+  &__wrap {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: url(../img/main/svg/bg_simbol.svg) no-repeat 100% 123%;
+  }
+}
+.column {
+  &__subtitle {
+    max-width: 820px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+  }
+
+  &__text {
+    max-width: 820px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 175%;
+    letter-spacing: 0.03em;
+    color: #2c2c2c;
+    padding-top: 32px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      padding-bottom: 32px;
+    }
+  }
+
+  &__icon {
+    margin-right: 32px;
+  }
+}
+
+/* Logistics section */
+
+.logistics {
+  position: relative;
+
+  &__fon {
+    display: inline-block;
+    width: 100%;
+    height: 588px;
+    position: relative;
+    z-index: 1;
+    background: url("../img/main/jpg/log__fon.jpg")no-repeat;
+    background-size: contain;
+ 
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    padding: 100px 100px 100px 100px;
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
+  &__column {
+    max-width: 720px;
+    flex: 1 1 auto;
+  }
+
+  &__subtitle {
+    padding-bottom: 32px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+
+  &__text {
+    padding-bottom: 40px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 175%;
+    letter-spacing: 0.03em;
+    color: #2c2c2c;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding-bottom: 32px;
+  }
+  &__icon {
+    flex: 0 0 auto;
+    margin-right: 32px;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    color: #2c2c2c;
+  }
+
+  &__button-wrap {
+    text-align: center;
+    padding: 40px 0px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+  }
+
+  &__button-text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 145%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #2c2c2c;
+  }
+
+  &__btn {
+    @include main-btn;
+    margin-top: 47px;
+    padding: 15px 40px;
+    background-color: #000;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 155%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+
+  &__img {
+    padding-left: 65px;
+    padding-bottom: 91px;
+  }
+}
+
+/* Карточки услуг */
+
+.serv {
+  &__container {
+    padding: 100px 0px 100px 100px;
+  }
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+
+.card {
+  padding: 32px 48px 48px 48px;
+  color: #000000;
+
+  &__title {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid #f3f1f1fe;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: inherit;
+  }
+
+  &__list {
+    max-width: 336px;
+    list-style: disc;
+    margin-left: 20px;
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 175%;
+    letter-spacing: 0.03em;
+    padding-bottom: 14px;
+    color: inherit;
+    &:hover {
+      text-decoration-line: underline;
+      transition: 0.3s;
+    }
+  }
+
+  &:nth-child(1) {
+    flex: 0 0 auto;
+    width: 744px;
+    height: 620px;
+    background: url("../img/main/svg/card1_img.svg") no-repeat right -15px,
+      url("../img/main/svg/bg_simbol.svg") no-repeat 487px 394px, #ffcb58;
+  }
+  &:nth-child(2) {
+    width: 408px;
+    height: 620px;
+    background: url("../img/main/svg/card2_img.svg") no-repeat 102px 206px,
+      url("../img/main/svg/bg_simbol.svg") no-repeat 189px 394px, #ffcb58;
+  }
+  &:nth-child(3) {
+    width: 408px;
+    height: 620px;
+    background: url("../img/main/svg/card3_img.svg") no-repeat 118px 248px,
+      url("../img/main/svg/bg_simbol.svg") no-repeat 189px 394px, #ffcb58;
+  }
+  &:nth-child(4) {
+    width: 520px;
+    height: 402px;
+    background: url("../img/main/svg/card4_img.svg") no-repeat 193px 117px,
+      url("../img/main/svg/bg_simbol.svg") no-repeat 189px 181px, #ffcb58;
+  }
+  &:nth-child(5) {
+    width: 520px;
+    height: 402px;
+    background: url("../img/main/svg/card5_img.svg") no-repeat 193px 117px,
+      url("../img/main/svg/bg_simbol.svg") no-repeat 189px 181px, #ffcb58;
+  }
+  &:nth-child(6) {
+    width: 520px;
+    height: 402px;
+    background: url("../img/main/svg/bg_simbol.svg") no-repeat 189px 181px, #ffcb58;
+  }
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+/* менеджер */

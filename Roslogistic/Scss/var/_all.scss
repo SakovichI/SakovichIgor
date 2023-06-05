@@ -6,11 +6,16 @@
 body {
   @include main-font;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
 
 .container {
   max-width: 1650px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 100px;
 }
 
 .title {
@@ -28,4 +33,10 @@ body {
     height: 10px;
     background: #ffcb58;
   }
+}
+
+.container-bg {
+  max-width: 1650px;
+  margin: 0 auto -300px ;
+  padding: 0 0 0 100px;
 }
