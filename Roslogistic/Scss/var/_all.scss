@@ -15,7 +15,7 @@ a{
 .container {
   max-width: 1650px;
   margin: 0 auto;
-  padding: 0 100px;
+  padding: 0 0 0 100px;
 }
 
 .title {
@@ -35,8 +35,3 @@ a{
   }
 }
 
-.container-bg {
-  max-width: 1650px;
-  margin: 0 auto -300px ;
-  padding: 0 0 0 100px;
-}
